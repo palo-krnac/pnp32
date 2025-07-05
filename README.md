@@ -1,10 +1,5 @@
-# pnp32
-Motion controller for openpnp based on ESP32.
 
-# Update README.md content with additional links to G-code documentation
-
-readme_content_with_links = """
-# 🎯 **OpenPNP Modular Motion Controller**
+# 🎯 **pnp32 Modular Motion Controller for openPNP**
 
 High-performance, fully modular motion controller for advanced Pick & Place machines. Designed to seamlessly integrate with OpenPnP and support direct SPI-controlled stepper drivers for ultra-smooth and precise motion.
 
@@ -13,7 +8,7 @@ High-performance, fully modular motion controller for advanced Pick & Place mach
 ## 🚀 **Key Features**
 
 - ✅ **ESP32-S3 or Teensy-based core** — powerful microcontroller with floating-point, high-speed I/O, and robust connectivity
-- ✅ **Native SPI motion control** — supports TMC5160, TMC5130, PowerSTEP01, and L6470 drivers without STEP/DIR emulation
+- ✅ **Native SPI motion control** — supports TMC5160, TMC5130, PowerSTEP01, and L64xx drivers without STEP/DIR emulation
 - ✅ **Flexible architecture** — single-board and multi-board configurations for scalable machine designs
 - ✅ **Built-in CAN bus** — robust communication between multiple controllers or modular head units
 - ✅ **RS485 interface** — control feeder modules or additional peripherals with industrial reliability
@@ -85,9 +80,10 @@ All key motion parameters and hardware configurations are set directly from Open
 
 | Parameter         | Value                                      |
 |-------------------|--------------------------------------------|
-| **MCU**           | ESP32-S3 or Teensy 4.x                   |
-| **Motor Drivers** | SPI controlled: TMC5160, TMC5130, PowerSTEP01, L6470 |
-| **Axes**          | Up to 10 axes total (depending on config) |
+| **MCU**           | ESP32-S3                 |
+| **Motor Drivers** | SPI controlled: TMC5160, TMC5130, PowerSTEP01, L64xx |
+| **Axes**          | Up to 12 axes total (depending on config) |
+| **Feeders**       | Up to 63 feeders total (depending on config) |
 | **Comm. Interfaces** | CAN bus, RS485, USB-Serial             |
 | **Peripheral Control** | Air/vacuum valves, pressure sensors, lighting |
 | **Voltage**       | 12–48 V supply for motors                |
@@ -133,7 +129,7 @@ This project is open-source under the MIT License. Contributions and pull reques
 
 ## ❤️ **Credits & Inspiration**
 
-Inspired by OpenPnP community, modern motion control concepts, and the open hardware spirit. Special thanks to Trinamic (TMC), STMicroelectronics (PowerSTEP01), and the global DIY PnP community.
+Inspired by OpenPnP community, modern motion control concepts, and the open hardware spirit. Special thanks to Trinamic (TMC), STMicroelectronics (PowerSTEP01, L64xx), and the global DIY PnP community.
 
 ---
 
@@ -146,8 +142,4 @@ Inspired by OpenPnP community, modern motion control concepts, and the open hard
 ### ✅ **Ready to go? Let's build next-level OpenPnP machines together!**
 """
 
-with open("/mnt/data/README_OpenPnP_links.md", "w", encoding="utf-8") as f:
-    f.write(readme_content_with_links)
-
-"/mnt/data/README_OpenPnP_links.md"
 
