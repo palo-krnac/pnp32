@@ -1,0 +1,64 @@
+site_name: pnp32 Documentation
+site_description: Modular motion ecosystem for OpenPnP using SPI drivers and ESP32/Teensy
+site_author: pnp32 team
+repo_url: https://github.com/yourusername/pnp32
+repo_name: pnp32
+theme:
+  name: material
+  language: en
+  logo: assets/logo.png
+  favicon: assets/favicon.ico
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: amber
+  features:
+    - navigation.instant
+    - navigation.sections
+    - navigation.tabs
+    - toc.integrate
+    - content.code.annotate
+    - content.tabs.link
+    - content.action.edit
+    - content.tooltips
+  icon:
+    repo: fontawesome/brands/github
+
+markdown_extensions:
+  - admonition
+  - footnotes
+  - codehilite
+  - pymdownx.superfences
+  - pymdownx.tabbed
+  - pymdownx.details
+  - pymdownx.emoji
+  - pymdownx.keys
+  - pymdownx.tasklist
+  - pymdownx.highlight
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/yourusername/pnp32
+    - icon: fontawesome/brands/discord
+      link: https://discord.gg/your-invite
+  announcement:
+    type: warning
+    text: ⚠️ Order your pnp32 kits soon! Join our Discord for early updates!
+
+nav:
+  - Home: index.md
+  - Getting Started: getting-started.md
+  - Hardware:
+      - Overview: hardware.md
+      - Schematics: hardware-schematics.md
+      - BOM: hardware-bom.md
+  - Firmware:
+      - Overview: software.md
+      - Building: software-build.md
+  - Reference:
+      - G-code: gcode.md
+      - Config Examples: config.md
+  - FAQ: faq.md
+  - Contributing: contributing.md
+
