@@ -132,13 +132,14 @@ nav:
     - TMC5130: HARDWARE/TMC5130.md
     - TMC5160: HARDWARE/TMC5160.md
   - Firmware: FIRMWARE/firmware.md
+  - Mechanical: MECHANICAL/mechanical.md
   - openPNP: 
     - Commands: openPNP/commands.md
     - Basic codes: openPNP/basic_code.md
     - Machine codes: openPNP/machine_code.md
     - Actuators codes: openPNP/actuators_code.md
     - Safety codes: openPNP/safety_code.md
-  - Mechanical: MECHANICAL/mechanical.md
+ 
 
 
 
