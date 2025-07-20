@@ -91,23 +91,11 @@ extra:
     provider: google
     property: !ENV GOOGLE_ANALYTICS_KEY
   social:
-    - icon: fontawesome/brands/docker
-      link: https://hub.docker.com/r/squidfunk/mkdocs-material/
-    - icon: fontawesome/brands/python
-      link: https://pypi.org/project/mkdocs-material/
-    - icon: fontawesome/brands/bluesky
-      link: https://bsky.app/profile/squidfunk.bsky.social
-    - icon: fontawesome/brands/mastodon
-      link: https://fosstodon.org/@squidfunk
-    - icon: fontawesome/brands/x-twitter
-      link: https://x.com/squidfunk
     - icon: fontawesome/brands/github
       link: https://github.com/palo-krnac/pnp32
-    - icon: fontawesome/brands/discord
-      link: https://discord.gg/your-invite
+
   announcement:
-    type: warning
-    text: ⚠️ Order your pnp32 kits soon! Join our Discord for early updates!
+
   #language: en
   #logo: assets/logo.png
   #favicon: assets/favicon.ico
