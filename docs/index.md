@@ -6,10 +6,10 @@ High-performance, fully modular motion controller for advanced Pick & Place mach
 
 ## 🚀 **Key Features**
 
-- ✅ **ESP32-S3 or ESP32-P4** — powerful microcontroller with floating-point, high-speed I/O, and robust connectivity
+- ✅ **ESP32** — powerful microcontroller with floating-point, high-speed I/O, and robust connectivity
 - ✅ **Native SPI motion control** — supports TMC5160, TMC5130 drivers without STEP/DIR emulation
 - ✅ **Flexible architecture** — single-board and multi-board configurations for scalable machine designs
-- ✅ **Built-in CAN bus** — robust communication between multiple controllers or modular head units
+- ✅ **CAN bus interface** — robust communication between multiple controllers or modular head units
 - ✅ **RS485 interface** — control feeder modules or additional peripherals with industrial reliability
 - ✅ **Integrated vacuum and air control** — including pressure/vacuum sensing and smart valve control
 - ✅ **Advanced lighting and vision control** — supports multi-channel LED lighting, camera triggers, and auxiliary outputs
