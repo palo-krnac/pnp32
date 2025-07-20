@@ -128,7 +128,7 @@ markdown_extensions:
 nav:
   - Home: index.md
   - Hardware: 
-    - Overview: hardware/hardware.md
+    - Overview: hardware/hw_overview.md
     - Boards: 
       - pnp32-MC: hardware/boards/pnp32-MC.md
       - pnp32-MCM: hardware/boards/pnp32-MCM.md
