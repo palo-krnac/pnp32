@@ -6,8 +6,8 @@ High-performance, fully modular motion controller for advanced Pick & Place mach
 
 ## 🚀 **Key Features**
 
-- ✅ **ESP32** — powerful microcontroller with floating-point, high-speed I/O, and robust connectivity
-- ✅ **Native SPI motion control** — supports TMC5160, TMC5130 drivers without STEP/DIR emulation
+- ✅ **ESP32 based core** — powerful microcontroller with floating-point, high-speed I/O, and robust connectivity
+- ✅ **Native SPI motion control** — supports TMC5160, TMC5130, PowerSTEP01, and L64xx drivers without STEP/DIR emulation
 - ✅ **Flexible architecture** — single-board and multi-board configurations for scalable machine designs
 - ✅ **CAN bus interface** — robust communication between multiple controllers or modular head units
 - ✅ **RS485 interface** — control feeder modules or additional peripherals with industrial reliability
@@ -76,16 +76,16 @@ All key motion parameters and hardware configurations are set directly from Open
 
 ## 🛠 **Board Parameters**
 
-| Parameter         | Value                                      |
-|-------------------|--------------------------------------------|
-| **MCU**           | ESP32-S3                 |
-| **Motor Drivers** | SPI controlled: TMC5160, TMC5130 |
-| **Axes**          | Up to 12 axes total (depending on config) |
-| **Feeders**       | Up to 63 feeders total (depending on config) |
-| **Comm. Interfaces** | CAN bus, RS485, USB-Serial             |
-| **Peripheral Control** | Air/vacuum valves, pressure sensors, lighting |
-| **Voltage**       | 12–48 V supply for motors                |
-| **Safety**        | E-stop input, software limits, watchdog  |
+| Parameter         | Value                                                 |
+|-------------------|-------------------------------------------------------|
+| **MCU**           | ESP32                                                 |
+| **Motor Drivers** | SPI controlled: TMC5160, TMC5130, PowerSTEP01, L64xx  |
+| **Axes**          | Up to 12 axes total (depending on config)             |
+| **Feeders**       | Up to 63 feeders total (depending on config)          |
+| **Comm. Interfaces** | CAN bus, RS485, USB-Serial                         |
+| **Peripheral Control** | Air/vacuum valves, pressure sensors, lighting    |
+| **Voltage**       | 12–48 V supply for motors                             |
+| **Safety**        | E-stop input, software limits, watchdog               |
 
 ---
 

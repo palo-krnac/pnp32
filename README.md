@@ -3,16 +3,16 @@
 
 High-performance, fully modular motion controller for advanced Pick & Place machines. Designed to seamlessly integrate with OpenPnP and support direct SPI-controlled stepper drivers for ultra-smooth and precise motion.
 
-👉 [See documentation page](https://pnp32.telemetry.digital)
+👉 [See pnp32 documentation page](https://pnp32.telemetry.digital)
 
 ---
 
 ## 🚀 **Key Features**
 
-- ✅ **ESP32-S3 or Teensy-based core** — powerful microcontroller with floating-point, high-speed I/O, and robust connectivity
+- ✅ **ESP32 based core** — powerful microcontroller with floating-point, high-speed I/O, and robust connectivity
 - ✅ **Native SPI motion control** — supports TMC5160, TMC5130, PowerSTEP01, and L64xx drivers without STEP/DIR emulation
 - ✅ **Flexible architecture** — single-board and multi-board configurations for scalable machine designs
-- ✅ **Built-in CAN bus** — robust communication between multiple controllers or modular head units
+- ✅ **CAN bus interface** — robust communication between multiple controllers or modular head units
 - ✅ **RS485 interface** — control feeder modules or additional peripherals with industrial reliability
 - ✅ **Integrated vacuum and air control** — including pressure/vacuum sensing and smart valve control
 - ✅ **Advanced lighting and vision control** — supports multi-channel LED lighting, camera triggers, and auxiliary outputs
@@ -82,7 +82,7 @@ All key motion parameters and hardware configurations are set directly from Open
 
 | Parameter         | Value                                      |
 |-------------------|--------------------------------------------|
-| **MCU**           | ESP32-S3                 |
+| **MCU**           | ESP32                                      |
 | **Motor Drivers** | SPI controlled: TMC5160, TMC5130, PowerSTEP01, L64xx |
 | **Axes**          | Up to 12 axes total (depending on config) |
 | **Feeders**       | Up to 63 feeders total (depending on config) |
