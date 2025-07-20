@@ -3,6 +3,8 @@
 
 High-performance, fully modular motion controller for advanced Pick & Place machines. Designed to seamlessly integrate with OpenPnP and support direct SPI-controlled stepper drivers for ultra-smooth and precise motion.
 
+👉 [See documentation page](https://pnp32.telemetry.digital)
+
 ---
 
 ## 🚀 **Key Features**
