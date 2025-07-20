@@ -6,7 +6,7 @@ High-performance, fully modular motion controller for advanced Pick & Place mach
 
 ## 🚀 **Key Features**
 
-- ✅ **ESP32-S3 or Teensy-based core** — powerful microcontroller with floating-point, high-speed I/O, and robust connectivity
+- ✅ **ESP32-S3 or ESP32-P4** — powerful microcontroller with floating-point, high-speed I/O, and robust connectivity
 - ✅ **Native SPI motion control** — supports TMC5160, TMC5130 drivers without STEP/DIR emulation
 - ✅ **Flexible architecture** — single-board and multi-board configurations for scalable machine designs
 - ✅ **Built-in CAN bus** — robust communication between multiple controllers or modular head units
@@ -62,8 +62,7 @@ All key motion parameters and hardware configurations are set directly from Open
 | `M912`        | Set driver sense resistor calibration     | `M912 X20 Y20 Z18`               | Custom command |
 | `M913`        | Set dynamic current scaling %            | `M913 X70 Y70 Z80`              | [Duet3D M913](https://docs.duet3d.com/User_manual/Reference/Gcode#m913) |
 | `M950`        | Configure pin assignments for outputs    | `M950 P1 S0`                     | [Duet3D M950](https://docs.duet3d.com/User_manual/Reference/Gcode#m950) |
-| `M355`        | Control LED lighting intensity            | `M355 P1 S255`                  | [RepRap M355](https://marlinfw.org/docs/gcode/M355.html) |
-| `M420`        | Enable bed leveling or machine compensation (if used) | `M420 S1`          | [RepRap M420](https://marlinfw.org/docs/gcode/M420.html) |
+
 
 ### 🛠 **Possible Additional Configurations**
 

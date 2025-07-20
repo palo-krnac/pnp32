@@ -89,24 +89,27 @@
 //
 // Heaters / Fans
 //
+
 #ifndef HEATER_0_PIN
-  #define HEATER_0_PIN                     P2_07
+  #define HEATER_0_PIN                     P1_30  //P2_07 - tieto som menil ja koli PWM na vystupoch ohrevu nahradené s EXP1
 #endif
 #if HOTENDS == 1 && DISABLED(HEATERS_PARALLEL)
   #ifndef FAN1_PIN
-    #define FAN1_PIN                       P2_04
+    #define FAN1_PIN                       P0_28  //P2_04 - tieto som menil ja koli PWM na vystupoch ohrevu nahradené s EXP1
   #endif
 #else
   #ifndef HEATER_1_PIN
-    #define HEATER_1_PIN                   P2_04
+    #define HEATER_1_PIN                   P1_18  //P2_04 - tieto som menil ja koli PWM na vystupoch ohrevu nahradené s EXP1
   #endif
 #endif
 #ifndef FAN_PIN
-  #define FAN_PIN                          P2_03
+  #define FAN_PIN                          P1_19  //P2_03 - tieto som menil ja koli PWM na vystupoch ohrevu nahradené s EXP1
 #endif
 #ifndef HEATER_BED_PIN
-  #define HEATER_BED_PIN                   P2_05
+  #define HEATER_BED_PIN                   P1_20  //P2_05 - tieto som menil ja koli PWM na vystupoch ohrevu nahradené s EXP1
 #endif
+
+
 
 //
 // LCD / Controller

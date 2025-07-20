@@ -1,0 +1,1037 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "b07a0c36-5a75-4bcb-95ab-30ad29518448")
+	(paper "A4")
+	(lib_symbols
+		(symbol "fab_ESP:ESP32-PICO-V3"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at -33.02 33.02 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "ESP32-PICO-V3"
+				(at -33.02 30.48 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "Package_DFN_QFN:QFN-48-1EP_7x7mm_P0.5mm_EP5.15x5.15mm"
+				(at 0 -43.18 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.espressif.com/sites/default/files/documentation/esp32-pico-v3_datasheet_en.pdf"
+				(at 0 -45.72 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "The ESP32-PICO-V3 is a System-in-Package (SiP) device that is based on ESP32 with ECO V3 wafer, providingcomplete Wi-Fi and Bluetooth®functionalities. It integrates a 4 MB SPI flash."
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "ESP32-PICO-V3_0_0"
+				(text "ESP32-PICO-V3"
+					(at -15.24 -5.08 0)
+					(effects
+						(font
+							(size 2.54 2.54)
+						)
+					)
+				)
+			)
+			(symbol "ESP32-PICO-V3_0_1"
+				(rectangle
+					(start -33.02 27.94)
+					(end 33.02 -27.94)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "ESP32-PICO-V3_1_1"
+				(pin bidirectional line
+					(at -35.56 25.4 0)
+					(length 2.54)
+					(name "LNA_IN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -35.56 20.32 0)
+					(length 2.54)
+					(name "CHIP_PU"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -35.56 15.24 0)
+					(length 2.54)
+					(name "32K_XP/GPIO32/ADC1_CH4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "12"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -35.56 12.7 0)
+					(length 2.54)
+					(name "32K_XN/GPIO33/ADC1_CH5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "13"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -35.56 7.62 0)
+					(length 2.54)
+					(name "MTDI/GPIO12/ADC2_CH5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "18"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -35.56 5.08 0)
+					(length 2.54)
+					(name "MTCK/GPIO13/ADC2_CH4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "20"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -35.56 2.54 0)
+					(length 2.54)
+					(name "MTMS/GPIO14/ADC2_CH6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "17"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -35.56 0 0)
+					(length 2.54)
+					(name "MTDO/GPIO15/ADC2_CH3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "21"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -35.56 -12.7 0)
+					(length 2.54)
+					(name "VDET_1/GPIO34/ADC1_CH6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -35.56 -15.24 0)
+					(length 2.54)
+					(name "VDET_2/GPIO35/ADC1_CH7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "11"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -35.56 -17.78 0)
+					(length 2.54)
+					(name "SENSOR_VP/GPIO36/ADC1_CH0"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -35.56 -20.32 0)
+					(length 2.54)
+					(name "SENSOR_CAPP/GPIO37/ADC1_CH1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -35.56 -22.86 0)
+					(length 2.54)
+					(name "SENSOR_CAPN/GPIO38/ADC1_CH2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -35.56 -25.4 0)
+					(length 2.54)
+					(name "SENSOR_VN/GPIO39/ADC1_CH3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_out line
+					(at -5.08 30.48 270)
+					(length 2.54)
+					(name "VDD_SDIO"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "26"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -2.54 30.48 270)
+					(length 2.54)
+					(name "VDDA"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -2.54 30.48 270)
+					(length 2.54)
+					(hide yes)
+					(name "VDDA"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "43"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -2.54 30.48 270)
+					(length 2.54)
+					(hide yes)
+					(name "VDDA"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "46"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 30.48 270)
+					(length 2.54)
+					(name "VDD3P3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 30.48 270)
+					(length 2.54)
+					(hide yes)
+					(name "VDD3P3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 2.54 30.48 270)
+					(length 2.54)
+					(name "VDD3P3_RTC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "19"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 2.54 -30.48 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "49"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 5.08 30.48 270)
+					(length 2.54)
+					(name "VDD3P3_CPU"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "37"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 35.56 25.4 180)
+					(length 2.54)
+					(name "U0TXD/GPIO1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "41"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 35.56 22.86 180)
+					(length 2.54)
+					(name "U0RXD/GPIO3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "40"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 35.56 17.78 180)
+					(length 2.54)
+					(name "GPIO0/BOOT/ADC2_CH1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "23"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 35.56 15.24 180)
+					(length 2.54)
+					(name "GPIO2/ADC2_CH2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "22"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 35.56 12.7 180)
+					(length 2.54)
+					(name "GPIO4/ADC2_CH0"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "24"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 35.56 10.16 180)
+					(length 2.54)
+					(name "GPIO5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "34"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 35.56 7.62 180)
+					(length 2.54)
+					(name "GPIO19"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "38"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 35.56 5.08 180)
+					(length 2.54)
+					(name "GPIO20"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "27"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 35.56 2.54 180)
+					(length 2.54)
+					(name "GPIO21"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "42"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 35.56 0 180)
+					(length 2.54)
+					(name "GPIO22"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "39"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 35.56 -2.54 180)
+					(length 2.54)
+					(name "GPIO25/ADC2_CH8/DAC_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "14"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 35.56 -5.08 180)
+					(length 2.54)
+					(name "GPIO26/ADC2_CH9/DAC_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "15"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 35.56 -7.62 180)
+					(length 2.54)
+					(name "GPIO27/ADC2_CH7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "16"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 35.56 -12.7 180)
+					(length 2.54)
+					(name "SD_CLK/GPIO6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "31"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 35.56 -15.24 180)
+					(length 2.54)
+					(name "SD_DATA_0/GPIO7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "32"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 35.56 -17.78 180)
+					(length 2.54)
+					(name "SD_DATA_1/GPIO8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "33"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 35.56 -20.32 180)
+					(length 2.54)
+					(name "SD_DATA_2/GPIO9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "28"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 35.56 -22.86 180)
+					(length 2.54)
+					(name "SD_DATA_3/GPIO10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "29"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 35.56 -25.4 180)
+					(length 2.54)
+					(name "SD_CMD/GPIO11"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "30"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+	)
+	(symbol
+		(lib_id "fab_ESP:ESP32-PICO-V3")
+		(at 99.06 64.77 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "11563459-bf53-4dff-9810-ab02b273d91b")
+		(property "Reference" "U1"
+			(at 103.7433 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "ESP32-PICO-V3"
+			(at 103.7433 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_DFN_QFN:QFN-48-1EP_7x7mm_P0.5mm_EP5.15x5.15mm"
+			(at 99.06 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.espressif.com/sites/default/files/documentation/esp32-pico-v3_datasheet_en.pdf"
+			(at 99.06 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "The ESP32-PICO-V3 is a System-in-Package (SiP) device that is based on ESP32 with ECO V3 wafer, providingcomplete Wi-Fi and Bluetooth®functionalities. It integrates a 4 MB SPI flash."
+			(at 99.06 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "33"
+			(uuid "31f6ceed-50f6-409c-94f3-d86a0d6bccd8")
+		)
+		(pin "9"
+			(uuid "47667d9b-e106-4dcf-a1f8-f3c6c4e3ba43")
+		)
+		(pin "20"
+			(uuid "739a36d2-92d8-472c-ba2e-650f09f82cb3")
+		)
+		(pin "15"
+			(uuid "c0d40154-5f4a-45d4-9039-f0e560cb7eaa")
+		)
+		(pin "11"
+			(uuid "6f7d2deb-93d2-42dd-8295-d0d2eccfc12d")
+		)
+		(pin "2"
+			(uuid "7271a638-d163-40be-ba26-09b8866b0a37")
+		)
+		(pin "5"
+			(uuid "cca08128-2e71-4dc0-96f6-02b50d36e061")
+		)
+		(pin "22"
+			(uuid "b0f7e7ff-f3fc-4677-b2af-2c4cc132023a")
+		)
+		(pin "10"
+			(uuid "8699fad5-7162-4b50-9d5c-193caf7895d1")
+		)
+		(pin "8"
+			(uuid "71243aa1-61a7-4add-970c-9184eff67ee4")
+		)
+		(pin "46"
+			(uuid "05357770-3224-44ab-96c3-92a7636d6a3e")
+		)
+		(pin "19"
+			(uuid "f58bfeec-3a85-49e8-bf60-cc09b8b7a0d8")
+		)
+		(pin "41"
+			(uuid "57c2ab16-c895-40a1-a361-6fa9fe80d9eb")
+		)
+		(pin "31"
+			(uuid "f0310254-f51f-451c-93bc-310e4da9e969")
+		)
+		(pin "28"
+			(uuid "e034447f-a1a1-4afd-8545-f9d8e2209846")
+		)
+		(pin "26"
+			(uuid "8660f15f-a5f1-4872-9917-cc21c4a0d1ce")
+		)
+		(pin "29"
+			(uuid "0f60906c-9251-4638-bcb9-aba28eb2ceb4")
+		)
+		(pin "42"
+			(uuid "f5e43d11-8cad-4b46-ba88-ead466a27741")
+		)
+		(pin "39"
+			(uuid "58ef399d-8a07-4cec-bd62-053b9c0f3602")
+		)
+		(pin "16"
+			(uuid "82c6af23-2f16-42e6-8efe-f8d5df59fe01")
+		)
+		(pin "3"
+			(uuid "29232dd5-a46d-47c2-893a-1e4ae40b2339")
+		)
+		(pin "38"
+			(uuid "6dd2457b-916f-4c08-86ab-7b95ef2fd212")
+		)
+		(pin "24"
+			(uuid "a3471357-e6e4-47c9-a0ab-1de5c9a1bb11")
+		)
+		(pin "13"
+			(uuid "f0a53637-48ee-4b36-bd4a-a02b2a43460a")
+		)
+		(pin "49"
+			(uuid "7af18b0a-7932-4b59-a66b-c7ca33c59698")
+		)
+		(pin "21"
+			(uuid "005f9f83-0b89-44b7-b8be-e1088ad3e15f")
+		)
+		(pin "27"
+			(uuid "d164139e-d963-43b1-bbbf-cb1638eccceb")
+		)
+		(pin "17"
+			(uuid "9f0b93be-985f-4ccd-863a-f6750ba7e22a")
+		)
+		(pin "43"
+			(uuid "73866f98-2555-464e-9ea7-ae8feb8e2956")
+		)
+		(pin "4"
+			(uuid "c6ae6bef-421b-487a-8596-bac77853aead")
+		)
+		(pin "12"
+			(uuid "0b96cacf-e7c5-4860-9cba-bffb2707f0f9")
+		)
+		(pin "40"
+			(uuid "fdbbee38-6d6d-49b9-b58a-061cbbc7ae0a")
+		)
+		(pin "30"
+			(uuid "61d28273-2154-4936-8a93-bde44a6d07c7")
+		)
+		(pin "18"
+			(uuid "cb2c1d9e-5735-4c7e-b058-cbc9723e356c")
+		)
+		(pin "23"
+			(uuid "c31256d8-bc48-465b-bb71-855343e53e53")
+		)
+		(pin "7"
+			(uuid "8f9114f0-ab18-47dc-8ba1-ffbf2fb3be5e")
+		)
+		(pin "37"
+			(uuid "69e467bb-12ae-44cc-b7c5-66b3dd37042b")
+		)
+		(pin "1"
+			(uuid "a928cdfa-e0a2-402d-8dd2-d5ddbce00d09")
+		)
+		(pin "14"
+			(uuid "325dff8a-b648-4164-9c17-8a246cf261f8")
+		)
+		(pin "34"
+			(uuid "d02f98a7-b34d-435d-809e-6979fce0bf23")
+		)
+		(pin "32"
+			(uuid "daaa839f-a765-40ec-bbf9-7d00a1a7ed1e")
+		)
+		(pin "6"
+			(uuid "9892a154-b77a-4a74-972c-c33941f2e323")
+		)
+		(instances
+			(project ""
+				(path "/a02e5dd1-80da-4253-b87a-c8707aa3e0b0/eda22078-57de-46ea-97af-750f30856e60"
+					(reference "U1")
+					(unit 1)
+				)
+			)
+		)
+	)
+)

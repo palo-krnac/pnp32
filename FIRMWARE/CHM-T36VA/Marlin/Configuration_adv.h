@@ -67,7 +67,7 @@
  *
  * Set this value to 0 to fail on the first error to occur.
  */
-#define THERMOCOUPLE_MAX_ERRORS 15
+//#define THERMOCOUPLE_MAX_ERRORS 15
 
 //
 // Custom Thermistor 1000 parameters
