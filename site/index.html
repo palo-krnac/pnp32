@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Modular motion ecosystem for OpenPnP using SPI drivers and ESP32/Teensy">
+        <meta name="description" content="Modular motion ecosystem for OpenPnP using SPI drivers and ESP32">
       
       
         <meta name="author" content="Pavol Krnac">
@@ -14,7 +14,7 @@
       
       
       
-        <link rel="next" href="HARDWARE/hardware/">
+        <link rel="next" href="hardware/hardware/">
       
       
       <link rel="icon" href="assets/images/favicon.png">
@@ -74,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#pnp32-modular-motion-controller-for-openpnp" class="md-skip">
+        <a href="#pnp32-motion-controller-for-openpnp" class="md-skip">
           Skip to content
         </a>
       
@@ -219,7 +219,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="HARDWARE/hardware/" class="md-tabs__link">
+        <a href="hardware/hardware/" class="md-tabs__link">
           
   
   
@@ -239,7 +239,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="FIRMWARE/firmware/" class="md-tabs__link">
+      <a href="hardware/firmware.md" class="md-tabs__link">
         
   
   
@@ -509,15 +509,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#board-types" class="md-nav__link">
-    <span class="md-ellipsis">
-      🛠 Board Types
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#software" class="md-nav__link">
     <span class="md-ellipsis">
       💻 Software
@@ -629,7 +620,7 @@
   
   
   
-    <a href="HARDWARE/hardware/" class="md-nav__link">
+    <a href="hardware/hardware/" class="md-nav__link">
       
   
   
@@ -657,7 +648,7 @@
   
   
     <li class="md-nav__item">
-      <a href="FIRMWARE/firmware/" class="md-nav__link">
+      <a href="hardware/firmware.md" class="md-nav__link">
         
   
   
@@ -889,15 +880,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#board-types" class="md-nav__link">
-    <span class="md-ellipsis">
-      🛠 Board Types
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#software" class="md-nav__link">
     <span class="md-ellipsis">
       💻 Software
@@ -998,7 +980,7 @@
   
 
 
-<h1 id="pnp32-modular-motion-controller-for-openpnp">🎯 <strong>pnp32 Modular Motion Controller for openPNP</strong><a class="headerlink" href="#pnp32-modular-motion-controller-for-openpnp" title="Permanent link">&para;</a></h1>
+<h1 id="pnp32-motion-controller-for-openpnp">🎯 <strong>pnp32 Motion Controller for openPNP</strong><a class="headerlink" href="#pnp32-motion-controller-for-openpnp" title="Permanent link">&para;</a></h1>
 <p>High-performance, fully modular motion controller for advanced Pick &amp; Place machines. Designed to seamlessly integrate with OpenPnP and support direct SPI-controlled stepper drivers for ultra-smooth and precise motion.</p>
 <hr />
 <h2 id="key-features">🚀 <strong>Key Features</strong><a class="headerlink" href="#key-features" title="Permanent link">&para;</a></h2>
@@ -1131,7 +1113,7 @@
 </tr>
 <tr>
 <td><strong>Motor Drivers</strong></td>
-<td>SPI controlled: TMC5160, TMC5130, PowerSTEP01, L64xx</td>
+<td>SPI controlled: TMC5160, TMC5130</td>
 </tr>
 <tr>
 <td><strong>Axes</strong></td>
@@ -1160,76 +1142,6 @@
 </tbody>
 </table>
 <hr />
-<h2 id="board-types">🛠 <strong>Board Types</strong><a class="headerlink" href="#board-types" title="Permanent link">&para;</a></h2>
-<table>
-<thead>
-<tr>
-<th>Parameter</th>
-<th>Driver_XY</th>
-<th>Driver_Z</th>
-<th>Driver AB</th>
-<th>Driver CD</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>pnp32_MCB_A</strong></td>
-<td>ESP32-S3</td>
-<td>af</td>
-<td>sfa</td>
-<td>FAF</td>
-</tr>
-<tr>
-<td><strong>pnp32_MCB_B</strong></td>
-<td>REFRF</td>
-<td>AREF</td>
-<td>AERF</td>
-<td>SPI controlled: TMC5160, TMC5130</td>
-</tr>
-<tr>
-<td><strong>Axes</strong></td>
-<td>AERF</td>
-<td>AREF</td>
-<td>RFAER</td>
-<td>Up to 12 axes total (depending on config)</td>
-</tr>
-<tr>
-<td><strong>Feeders</strong></td>
-<td>AER</td>
-<td>AERF</td>
-<td>AERF</td>
-<td>Up to 63 feeders total (depending on config)</td>
-</tr>
-<tr>
-<td><strong>Comm. Interfaces</strong></td>
-<td>ARF</td>
-<td>AREF</td>
-<td>ARF</td>
-<td>CAN bus, RS485, USB-Serial</td>
-</tr>
-<tr>
-<td><strong>Peripheral Control</strong></td>
-<td>RF</td>
-<td>ARF</td>
-<td>ARF</td>
-<td>Air/vacuum valves, pressure sensors, lighting</td>
-</tr>
-<tr>
-<td><strong>Voltage</strong></td>
-<td>ARF</td>
-<td>AR</td>
-<td>AFR</td>
-<td>12–48 V supply for motors</td>
-</tr>
-<tr>
-<td><strong>Safety</strong></td>
-<td>SFAS</td>
-<td>ARFAE</td>
-<td>ARFAR</td>
-<td>E-stop input, software limits, watchdog</td>
-</tr>
-</tbody>
-</table>
 <hr />
 <h2 id="software">💻 <strong>Software</strong><a class="headerlink" href="#software" title="Permanent link">&para;</a></h2>
 <ul>
@@ -1307,7 +1219,7 @@
         
         
           
-          <a href="HARDWARE/hardware/" class="md-footer__link md-footer__link--next" aria-label="Next: Overview">
+          <a href="hardware/hardware/" class="md-footer__link md-footer__link--next" aria-label="Next: Overview">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next

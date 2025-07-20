@@ -1,6 +1,6 @@
 
 site_name: pnp32
-site_description: Modular motion ecosystem for OpenPnP using SPI drivers and ESP32/Teensy
+site_description: Modular motion ecosystem for OpenPnP using SPI drivers and ESP32
 site_author: Pavol Krnac
 
 # Repository
@@ -112,7 +112,7 @@ markdown_extensions:
   - codehilite
   - attr_list
   - toc:
-      permalink: true
+       permalink: true
   - pymdownx.superfences
   - pymdownx.tabbed
   - pymdownx.details
@@ -128,10 +128,16 @@ markdown_extensions:
 nav:
   - Home: index.md
   - Hardware: 
-    - Overview: HARDWARE/hardware.md
-    - TMC5130: HARDWARE/TMC5130.md
-    - TMC5160: HARDWARE/TMC5160.md
-  - Firmware: FIRMWARE/firmware.md
+    - Overview: hardware/hardware.md
+    - Boards: 
+      - pnp32-MC: hardware/boards/pnp32-MC.md
+      - pnp32-MCM: hardware/boards/pnp32-MCM.md
+      - pnp32-MCH: hardware/boards/pnp32-MCH.md
+    - Drivers:   
+      - TMC5130: hardware/drivers/TMC5130.md
+      - TMC5160: hardware/drivers/TMC5160.md
+      - powerSTEP01: hardware/drivers/powerstep01.md
+  - Firmware: hardware/firmware.md
   - Mechanical: MECHANICAL/mechanical.md
   - openPNP: 
     - Commands: openPNP/commands.md

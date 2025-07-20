@@ -1,4 +1,4 @@
-# 🎯 **pnp32 Modular Motion Controller for openPNP**
+# 🎯 **pnp32 Motion Controller for openPNP**
 
 High-performance, fully modular motion controller for advanced Pick & Place machines. Designed to seamlessly integrate with OpenPnP and support direct SPI-controlled stepper drivers for ultra-smooth and precise motion.
 
@@ -76,31 +76,21 @@ All key motion parameters and hardware configurations are set directly from Open
 
 ## 🛠 **Board Parameters**
 
-| Parameter         | Value                                                 |
-|-------------------|-------------------------------------------------------|
-| **MCU**           | ESP32                                                 |
-| **Motor Drivers** | SPI controlled: TMC5160, TMC5130, PowerSTEP01, L64xx  |
-| **Axes**          | Up to 12 axes total (depending on config)             |
-| **Feeders**       | Up to 63 feeders total (depending on config)          |
-| **Comm. Interfaces** | CAN bus, RS485, USB-Serial                         |
-| **Peripheral Control** | Air/vacuum valves, pressure sensors, lighting    |
-| **Voltage**       | 12–48 V supply for motors                             |
-| **Safety**        | E-stop input, software limits, watchdog               |
+| Parameter              | Value                                                 |
+|------------------------|-------------------------------------------------------|
+| **MCU**                | ESP32                                                 |
+| **Motor Drivers**      | SPI controlled: TMC5160, TMC5130                      |
+| **Axes**               | Up to 12 axes total (depending on config)             |
+| **Feeders**            | Up to 63 feeders total (depending on config)          |
+| **Comm. Interfaces**   | CAN bus, RS485, USB-Serial                            |
+| **Peripheral Control** | Air/vacuum valves, pressure sensors, lighting         |
+| **Voltage**            | 12–48 V supply for motors                             |
+| **Safety**             | E-stop input, software limits, watchdog               |
 
 ---
 
-## 🛠 **Board Types**
 
-| Parameter         | Driver_XY | Driver_Z | Driver AB | Driver CD |
-|-------------------|-----------|------|---------|------------------|
-| **pnp32_MCB_A**           | ESP32-S3    |af| sfa |  FAF         |
-| **pnp32_MCB_B** |REFRF|AREF|AERF| SPI controlled: TMC5160, TMC5130 |
-| **Axes**          |AERF |AREF|RFAER|Up to 12 axes total (depending on config) |
-| **Feeders**       |AER|AERF|AERF| Up to 63 feeders total (depending on config) |
-| **Comm. Interfaces** |ARF|AREF|ARF| CAN bus, RS485, USB-Serial             |
-| **Peripheral Control** |RF|ARF|ARF| Air/vacuum valves, pressure sensors, lighting |
-| **Voltage**       |ARF |AR|AFR|12–48 V supply for motors                |
-| **Safety**        | SFAS|ARFAE|ARFAR|E-stop input, software limits, watchdog  |
+
 
 ---
 
