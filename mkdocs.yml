@@ -55,8 +55,8 @@ palette:
         name: Switch to light mode
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: indigo
-      accent: indigo
+      primary: gray
+      accent: gray
       toggle:
         icon: material/toggle-switch
         name: Switch to dark mode
