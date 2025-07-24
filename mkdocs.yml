@@ -138,7 +138,9 @@ nav:
       - TMC5160: hardware/drivers/TMC5160.md
       - powerSTEP01: hardware/drivers/powerstep01.md
   - Firmware: hardware/firmware.md
-  - Mechanical: MECHANICAL/mechanical.md
+  - Mechanical: 
+    - Overview: mechanical/mechanical.md
+    - Motors: mechanical/motors.md
   - openPNP: 
     - Commands: openPNP/commands.md
     - Basic codes: openPNP/basic_code.md
@@ -146,6 +148,9 @@ nav:
     - Actuators codes: openPNP/actuators_code.md
     - Safety codes: openPNP/safety_code.md
  
+
+ #175
+ #154
 
 
 
