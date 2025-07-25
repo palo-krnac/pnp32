@@ -1,0 +1,1 @@
+#define BOARD_INFO_NAME "PnP Controller"
