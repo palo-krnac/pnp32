@@ -17,6 +17,17 @@ void setup()
   Serial.begin(SERIAL_SPEED); //set in config.h
   Serial.println("Ready GCodeParser");
   setupM150();  // inicializácia LED pásov
+  #ifdef pnp32_MC
+  Serial.println("Bežíme na ESP32");
+  #elif defined(pnp32_MCM)
+  Serial.println("Bežíme na MCM");
+  #elif defined(pnp32_MCH)
+  Serial.println("Bežíme na MCH");
+  #elif defined(PnP_Controller)
+  Serial.println("Bežíme na Teensy 4.0");
+#else
+  #error "Nezvolená podpora dosky!"
+#endif
 }
 
 void loop()

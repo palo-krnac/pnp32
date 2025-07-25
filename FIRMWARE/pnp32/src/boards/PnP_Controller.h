@@ -1,4 +1,4 @@
-#define BOARD_INFO_NAME "PnP Controller"
+
 
 /**
  * Marlin 3D Printer Firmware
@@ -92,18 +92,11 @@
 #define Y_ENABLE_PIN                           7
 //#define Y_CS_PIN                            31
 
-#define Z_STEP_PIN                             4
-#define Z_DIR_PIN                              5
+
 #define Z_ENABLE_PIN                           8
 //#define Z_CS_PIN                            32
 
-#define E0_STEP_PIN                            9
-#define E0_DIR_PIN                            10
-#define E0_ENABLE_PIN                         25
-
-#define E1_STEP_PIN                           33
-#define E1_DIR_PIN                            34
-#define E1_ENABLE_PIN                         35
+#define M600_PIN                              33
 
 //
 // Heaters / Fans
@@ -133,3 +126,10 @@
 #ifndef SDCARD_CONNECTION
   #define SDCARD_CONNECTION              ONBOARD
 #endif
+
+
+//
+//LED
+//
+#define LED_PIN_CH0   4
+#define LED_PIN_CH1   5

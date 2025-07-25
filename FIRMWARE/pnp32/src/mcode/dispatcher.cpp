@@ -17,7 +17,7 @@ void dispatchMCode(int code, GCodeParser& GCode)
   switch (code)
   {
     case 150: handleM150(GCode); break;
-    case 600: handleM600(); break;
+    case 600: handleM600(GCode); break;
     case 601: handleM601(); break;
     case 602: handleM602(); break;
     case 603: handleM603(); break;

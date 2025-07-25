@@ -1022,93 +1022,49 @@
 		)
 		(uuid "f3a8fc9d-2427-4b8d-b00f-11864510cc04")
 	)
-	(global_label "SPI_CLK"
-		(shape input)
-		(at 45.72 69.85 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "1dd9c88b-2be0-465a-8181-79899afeba17")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 35.1148 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "SPI_CS"
-		(shape input)
-		(at 45.72 67.31 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "54389764-a6e9-463c-bacc-792e9a5f4b53")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 36.2034 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "SPI_MOSI"
-		(shape input)
-		(at 45.72 72.39 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "6b4306f8-9490-4ef9-9e41-358c1517963b")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 34.0867 72.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "SPI_MISO"
+	(hierarchical_label "SPI_MISO"
 		(shape input)
 		(at 45.72 74.93 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right)
 		)
-		(uuid "8c63bde0-1f11-41ac-8719-e4e7531ed246")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 34.0867 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
+		(uuid "0e930989-4da9-4a7f-8a8d-1456d6f8c0ad")
+	)
+	(hierarchical_label "SPI_CLK"
+		(shape input)
+		(at 45.72 69.85 180)
+		(effects
+			(font
+				(size 1.27 1.27)
 			)
+			(justify right)
 		)
+		(uuid "0f30ee46-c930-4bd5-b45f-20dde9c79bb9")
+	)
+	(hierarchical_label "SPI_MOSI"
+		(shape input)
+		(at 45.72 72.39 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "575d9a37-5b98-4799-b7a8-4ad625670d5c")
+	)
+	(hierarchical_label "SPI_CS"
+		(shape input)
+		(at 45.72 67.31 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "e87478ed-9b3f-41f2-9ceb-0cb1af6e3a3c")
 	)
 	(symbol
 		(lib_id "Driver_Motor:TMC5130A-TA")
@@ -1312,16 +1268,28 @@
 		)
 		(instances
 			(project "pnp32_mainboard"
-				(path "/a02e5dd1-80da-4253-b87a-c8707aa3e0b0/587aa0d5-267c-4288-a48c-61def213ea86"
-					(reference "U4")
+				(path "/a02e5dd1-80da-4253-b87a-c8707aa3e0b0/36c8ee69-d46e-4392-9648-7ffe454aa773"
+					(reference "U6")
 					(unit 1)
 				)
-				(path "/a02e5dd1-80da-4253-b87a-c8707aa3e0b0/9805ec31-9a99-4e4b-a625-8fd11a9a458a"
-					(reference "U3")
+				(path "/a02e5dd1-80da-4253-b87a-c8707aa3e0b0/4927e2a7-a4c2-4e52-af67-49600773c73d"
+					(reference "U5")
+					(unit 1)
+				)
+				(path "/a02e5dd1-80da-4253-b87a-c8707aa3e0b0/831bc4de-0744-4eeb-b882-33b45fc786ec"
+					(reference "U7")
 					(unit 1)
 				)
 				(path "/a02e5dd1-80da-4253-b87a-c8707aa3e0b0/9eb8d42e-6154-4c2e-a139-649ab80f1930"
 					(reference "U2")
+					(unit 1)
+				)
+				(path "/a02e5dd1-80da-4253-b87a-c8707aa3e0b0/a54d937e-12a5-4dff-8c5d-763d1b46ce81"
+					(reference "U3")
+					(unit 1)
+				)
+				(path "/a02e5dd1-80da-4253-b87a-c8707aa3e0b0/bc306ebc-9231-4e41-974d-f78f75c244a9"
+					(reference "U4")
 					(unit 1)
 				)
 			)

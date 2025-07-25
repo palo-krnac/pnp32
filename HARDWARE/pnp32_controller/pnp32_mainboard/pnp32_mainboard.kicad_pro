@@ -637,12 +637,24 @@
       "X-driver"
     ],
     [
-      "9805ec31-9a99-4e4b-a625-8fd11a9a458a",
-      "Y_L-driver"
+      "a54d937e-12a5-4dff-8c5d-763d1b46ce81",
+      "Y-driver"
     ],
     [
-      "587aa0d5-267c-4288-a48c-61def213ea86",
-      "Y_R-driver"
+      "bc306ebc-9231-4e41-974d-f78f75c244a9",
+      "A-driver"
+    ],
+    [
+      "4927e2a7-a4c2-4e52-af67-49600773c73d",
+      "Z-driver"
+    ],
+    [
+      "36c8ee69-d46e-4392-9648-7ffe454aa773",
+      "B-driver"
+    ],
+    [
+      "831bc4de-0744-4eeb-b882-33b45fc786ec",
+      "C-driver"
     ]
   ],
   "text_variables": {}
