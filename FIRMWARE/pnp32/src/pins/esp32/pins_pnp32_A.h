@@ -26,20 +26,11 @@
  * Website https://github.com/enwi/ESPNP
  */
 
-#include "env_validate.h"
 
 #define BOARD_INFO_NAME      "ESPNP"
 #define DEFAULT_MACHINE_NAME "ESP Pick and Place"
 
-//
-// I2S (steppers & other output-only pins)
-//
-#define I2S_STEPPER_STREAM
-#if ENABLED(I2S_STEPPER_STREAM)
-  #define I2S_WS                              17
-  #define I2S_BCK                             22
-  #define I2S_DATA                            21
-#endif
+
 
 //
 // Servos
@@ -109,8 +100,9 @@
 // #define FAN_SOFT_PWM_REQUIRED // check if needed
 
 // Neopixel Rings
-#define NEOPIXEL_PIN                          14
-#define NEOPIXEL2_PIN                         27
+// Piny pre LED pásy
+#define LED_PIN_CH0           21
+#define LED_PIN_CH1           22
 
 // SPI
 #define MISO_PIN                              19
