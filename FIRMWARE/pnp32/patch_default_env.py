@@ -1,31 +1,47 @@
-Import("env")
-import re
-import os
-import sys
-import subprocess
+def build_command(env_name: str) -> list[str]:
+    """Create a PlatformIO command for the detected environment.
+    We forward only user-supplied flags (--target/-t and --upload-port/-p).
+    """
+    cmd = ["platformio", "run", "-e", env_name]
 
-def detect_board_define():
-    try:
-        with open("src/config.h", "r", encoding="utf-8") as f:
-            content = f.read()
-    except FileNotFoundError:
-        print("❌ Súbor config.h neexistuje!")
-        return "auto"
+    args = sys.argv[1:]
+    upload_port = None
+    targets = []
 
-    match = re.search(r'^\s*#define\s+(PnP_Controller|pnp32_MC|pnp32_MCH|pnp32_MCM)\b', content, re.MULTILINE)
-    if match:
-        board_define = match.group(1)
-        print(f"➡️  Detekovaný typ dosky z config.h: {board_define}")
-        return board_define
-    else:
-        print("⚠️  Nenašiel sa žiadny typ dosky, používam 'auto'")
-        return "auto"
+    i = 0
+    while i < len(args):
+        arg = args[i]
+        # Preskoč pôvodné -e/--environment a hodnotu
+        if arg in ("-e", "--environment"):
+            i += 2
+            continue
+        # --target <value>
+        if arg == "--target" and i + 1 < len(args):
+            targets.append(args[i + 1])
+            i += 2
+            continue
+        # -t <value>
+        if arg == "-t" and i + 1 < len(args):
+            targets.append(args[i + 1])
+            i += 2
+            continue
+        # --upload-port <value>
+        if arg == "--upload-port" and i + 1 < len(args):
+            upload_port = args[i + 1]
+            i += 2
+            continue
+        # -p <value>
+        if arg == "-p" and i + 1 < len(args):
+            upload_port = args[i + 1]
+            i += 2
+            continue
+        # ostatné parametre ignorujeme (sú to interné voľby PlatformIO)
+        i += 1
 
-env_name = detect_board_define()
+    # pripoj nájdené ciele a upload port
+    for t in targets:
+        cmd.extend(["--target", t])
+    if upload_port:
+        cmd.extend(["--upload-port", upload_port])
 
-# Ak sme v "auto", spustíme znova build ale v správnom env
-if env_name != "auto":
-    print(f"🔁 Prepnúť build na prostredie '{env_name}'")
-    result = subprocess.run(["platformio", "run", "-e", env_name])
-    # Ukonči tento build, aby sa nespustil duplicitne
-    env.Exit(result.returncode)
+    return cmd

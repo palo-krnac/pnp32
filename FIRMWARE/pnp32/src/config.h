@@ -8,7 +8,7 @@
 // Definuj iba jednu z nasledujúcich možností:
    #define PnP_Controller
 // #define pnp32_MC
- //#define pnp32_MCH
+// #define pnp32_MCH
 // #define pnp32_MCM
 
 // ==================== AUTOMATICKÝ VÝBER BOARD KONFIGURÁCIE ====================
@@ -31,10 +31,13 @@
 #define LED_TYPE_CH1           NEO_GRBW + NEO_KHZ800
 
 // ==================== OSTATNÉ VSTUPY/VÝSTUPY ====================
-#define RELAY1_PIN             25
-#define BUTTON1_PIN            32
-#define ENDSTOP_X_PIN          33
-#define ENDSTOP_Y_PIN          34
-#define ENDSTOP_Z_PIN          35
+//#define RELAY1_PIN             25
+//#define BUTTON1_PIN            32
+//#define ENDSTOP_X_PIN          33
+//#define ENDSTOP_Y_PIN          34
+//#define ENDSTOP_Z_PIN          35
 
-#define RELAY_ACTIVE_HI
+//#define RELAY_ACTIVE_HI
+
+
+//platformio run -e pnp32_MC -t upload

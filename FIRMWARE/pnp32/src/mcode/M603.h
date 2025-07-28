@@ -1,4 +1,6 @@
 #pragma once
+#include <GCodeParser.h>
 #include "config.h"
 
-void handleM603();
+// Handler for M603. Expects parameter S (0–255).
+void handleM603(GCodeParser &GCode);

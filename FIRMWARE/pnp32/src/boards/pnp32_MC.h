@@ -30,6 +30,8 @@
 
 #define BOARD_INFO_NAME "pnp32-MC"
 
+
+#define M600_PIN                              32
 //
 // SPI
 //

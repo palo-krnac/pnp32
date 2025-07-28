@@ -9381,5 +9381,18 @@
 		(layer "Edge.Cuts")
 		(uuid "95a1450c-64a5-4940-a4d7-eae245b174b9")
 	)
+	(gr_text "https://github.com/palo-krnac/pnp32"
+		(at 153.31 119.38 0)
+		(layer "F.Cu")
+		(uuid "89141dac-6a8c-4157-bc0a-3576fd24c577")
+		(effects
+			(font
+				(size 1.5 1.5)
+				(thickness 0.3)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+	)
 	(embedded_fonts no)
 )
