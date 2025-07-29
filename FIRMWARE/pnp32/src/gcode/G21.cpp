@@ -1,8 +1,8 @@
-#include "G28.h"
+#include "G21.h"
 #include <Arduino.h>
 #include "config.h"
 
-void handleG28()
+void handleG21()
 {
   Serial.println(COMMAND_CONFIRM_REGEX);
 }

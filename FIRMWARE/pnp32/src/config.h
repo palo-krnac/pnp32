@@ -1,13 +1,34 @@
 #pragma once
 
 #define SERIAL_SPEED     115200
-#define DEFAULT_MACHINE_NAME "ESP Pick and Place"
-#define DEFAULT_CONTROLLER_NAME "ESP Pick and Place"
+
+#define FIRMWARE_NAME "pnp32-motion controller"
+#define SOURCE_CODE_URL  "https://github.com/palo-krnac/pnp32/tree/main/FIRMWARE"
+#define AUTHOR "Pavol Krnac"
+#define MACHINE_TYPE "NEODEN"
+#define CONTROLLER_TYPE "pnp32_MC"
+#define FIRMWARE_VERSION "v0.1"
+#define PROTOCOL_VERSION "v0.1"
+#define EXTRUDER_COUNT 2
+#define FIRMWARE_UUID "12345678-1234-5678-90ab-cdef12345678"
+
+
+//===================== REGEX ==========================
+#define COMMAND_CONFIRM_REGEX "ok"    // $0D" (^ok.*)
+#define COMMAND_ERROR_REGEX   "error" // (^error.*)
+#define POSITION_REPORT_REGEX         // (^.*X:(?<X>-?\d+\.\d+) Y:(?<Y>-?\d+\.\d+) Z:(?<Z>-?\d+\.\d+).*)
+
+//FIRMWARE_NAME:Marlin 2.1.2.1 (Jun 25 2025 17:52:17) SOURCE_CODE_URL:github.com/MarlinFirmware/Marlin PROTOCOL_VERSION:1.0 MACHINE_TYPE:OpenPNP-cinska kokotina EXTRUDER_COUNT:2 UUID:cede2a2f-41a2-4748-9b12-c55c62f367ff
+
+//X:0.00 Y:0.00 Z:200.00 E:0.00 Count X:0 Y:0 Z:16000
+
+//G21 ; Set millimeters mode
+//G90 ; Set absolute positioning mode
 
 // ==================== VÝBER DOSKY ====================
 // Definuj iba jednu z nasledujúcich možností:
-   #define PnP_Controller
-// #define pnp32_MC
+  // #define PnP_Controller
+ #define pnp32_MC
 // #define pnp32_MCH
 // #define pnp32_MCM
 
@@ -41,3 +62,4 @@
 
 
 //platformio run -e pnp32_MC -t upload
+

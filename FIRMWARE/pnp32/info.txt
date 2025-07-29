@@ -1,0 +1,145 @@
+Connect command
+
+G21 ; Set millimeters mode
+G90 ; Set absolute positioning mode
+M82 ; Set absolute mode for extruder
+M42 I M1 P0205 S0; VAC Pump off
+M42 I M1 P0126 S0; LED Top on
+M42 I M1 P0010 S255; LED Bottom off
+M42 I M1 P0100 S255; Air Nozzle 1 off
+M42 I M1 P0125 S255; Air Nozzle 2 off
+M42 I M1 P0124 S255; Power Feeder off
+
+
+Home command
+G28 XY
+T0 S1;
+G92 E0;
+T1 S1;
+G92 E0;
+G92 Z0;
+M42 I M1 P0205 S0; VAC Pump off
+M42 I M1 P0126 S0; LED Top on
+M42 I M1 P0010 S255; LED Bottom off
+M42 I M1 P0100 S255; Air Nozzle 1 off
+M42 I M1 P0125 S255; Air Nozzle 2 off
+M42 I M1 P0025 S255; Air Dispenser off
+M42 I M1 P0024 S255; Air Pneuamtic Cylinder
+M42 I M1 P0023 S255; Power Feeder Controller off
+G0 X0 Y0 Z0 F10000;
+
+
+
+DETECT FIRMWARE
+
+FIRMWARE_NAME:Marlin 2.1.2.1 (Jun 25 2025 17:52:17) SOURCE_CODE_URL:github.com/MarlinFirmware/Marlin PROTOCOL_VERSION:1.0 MACHINE_TYPE:OpenPNP-cinska kokotina EXTRUDER_COUNT:2 UUID:cede2a2f-41a2-4748-9b12-c55c62f367ff
+
+X:0.00 Y:0.00 Z:200.00 E:0.00 Count X:0 Y:0 Z:16000
+
+<driver class="org.openpnp.machine.reference.driver.GcodeAsyncDriver" id="DRV166f4908f8ceddc8" name="GcodeDriver" motion-control-type="SimpleSCurve" communications="serial" connection-keep-alive="false" units="Millimeters" max-feed-rate="0" backlash-offset-x="-0.3" backlash-offset-y="-0.4" backlash-offset-z="0.0" backlash-offset-r="0.0" non-squareness-factor="0.0" backlash-feed-rate-factor="0.1" timeout-milliseconds="15000" connect-wait-time-milliseconds="1000" visual-homing-enabled="true" backslash-escaped-characters-enabled="false" remove-comments="true" compress-gcode="true" logging-gcode="false" supporting-pre-move="false" using-letter-variables="false" infinity-timeout-milliseconds="60000" writer-polling-interval="100" writer-queue-timeout="60000" max-commands-queued="1000" confirmation-flow-control="true" reported-location-confirmation="true" interpolation-max-steps="32" interpolation-jerk-steps="4" interpolation-time-step="0.001" interpolation-min-step="16">
+            <serial line-ending-type="LF" port-name="tty.usbserial-D308QQ68" baud="115200" flow-control="XonXoff" data-bits="Eight" stop-bits="One" parity="None" set-dtr="false" set-rts="false" name="SerialPortCommunications"/>
+            <tcp line-ending-type="LF" ip-address="127.0.0.1" port="23" name="TcpCommunications"/>
+            <simulated line-ending-type="LF"/>
+            <homing-fiducial-location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
+            <detected-firmware><![CDATA[FIRMWARE_NAME:TinyG, FIRMWARE_URL:https%3A//github.com/synthetos/TinyG, FIRMWARE_VERSION:0.97, FIRMWARE_BUILD:440.21, HARDWARE_PLATFORM:1.00, HARDWARE_VERSION:8.00]]></detected-firmware>
+            <reported-axes><![CDATA[X:15.9730 Y:2.8585 Z:0.0000 A:0.0000 B:0.0000 C:0.0000]]></reported-axes>
+            <command type="DISABLE_COMMAND">
+               <text><![CDATA[M9 M5]]></text>
+            </command>
+            <command type="ENABLE_COMMAND">
+               <text><![CDATA[G21 M9]]></text>
+            </command>
+            <command type="POST_VISION_HOME_COMMAND">
+               <text><![CDATA[G92 {X:X%.4f} {Y:Y%.4f}]]></text>
+            </command>
+            <command type="CONNECT_COMMAND">
+               <text><![CDATA[$SV=2]]></text>
+               <text><![CDATA[$ME]]></text>
+               <text><![CDATA[$ex=1]]></text>
+               <text><![CDATA[$1pm=2]]></text>
+               <text><![CDATA[$2pm=2]]></text>
+               <text><![CDATA[$3pm=2]]></text>
+               <text><![CDATA[$4pm=2]]></text>
+               <text><![CDATA[$mt=300]]></text>
+               <text><![CDATA[G21 G90 G92 X0 Y0 Z0 A0 M8 M5]]></text>
+               <text><![CDATA[$1sa=0.900]]></text>
+               <text><![CDATA[$1tr=39.9190]]></text>
+               <text><![CDATA[$1mi=8]]></text>
+               <text><![CDATA[$2sa=0.900]]></text>
+               <text><![CDATA[$2tr=39.9060]]></text>
+               <text><![CDATA[$2mi=8]]></text>
+               <text><![CDATA[$3sa=1.800]]></text>
+               <text><![CDATA[$3tr=8.0000]]></text>
+               <text><![CDATA[$3mi=8]]></text>
+               <text><![CDATA[$3po=1]]></text>
+               <text><![CDATA[$4sa=0.900]]></text>
+               <text><![CDATA[$4tr=160.0000]]></text>
+               <text><![CDATA[$4mi=8]]></text>
+               <text><![CDATA[$xjm=500]]></text>
+               <text><![CDATA[$xjh=2000]]></text>
+               <text><![CDATA[$xvm=5000]]></text>
+               <text><![CDATA[$xsv=2000]]></text>
+               <text><![CDATA[$xfr=5000]]></text>
+               <text><![CDATA[$xsn=3]]></text>
+               <text><![CDATA[$xsx=2]]></text>
+               <text><![CDATA[$yjm=500]]></text>
+               <text><![CDATA[$yjh=2000]]></text>
+               <text><![CDATA[$yvm=5000]]></text>
+               <text><![CDATA[$ysv=2000]]></text>
+               <text><![CDATA[$yfr=5000]]></text>
+               <text><![CDATA[$ysn=3]]></text>
+               <text><![CDATA[$ysx=2]]></text>
+               <text><![CDATA[$zjm=500]]></text>
+               <text><![CDATA[$zjh=500]]></text>
+               <text><![CDATA[$zvm=5000]]></text>
+               <text><![CDATA[$zsv=1000]]></text>
+               <text><![CDATA[$zfr=2000]]></text>
+               <text><![CDATA[$zsx=3]]></text>
+               <text><![CDATA[$zsn=2]]></text>
+               <text><![CDATA[$zzb=2]]></text>
+               <text><![CDATA[$ajm=5000]]></text>
+               <text><![CDATA[$avm=50000]]></text>
+               <text><![CDATA[$afr=200000]]></text>
+            </command>
+            <command type="HOME_COMMAND">
+               <text><![CDATA[G28.2 X0 Y0 Z0 A0 ]]></text>
+               <text><![CDATA[G28.3 X0 Y0 Z0]]></text>
+            </command>
+            <command type="COMMAND_CONFIRM_REGEX">
+               <text><![CDATA[.*ok>.*]]></text>
+            </command>
+            <command type="MOVE_TO_COMPLETE_REGEX">
+               <text><![CDATA[.*stat:3.*]]></text>
+            </command>
+            <command type="PICK_COMMAND">
+               <text><![CDATA[M8]]></text>
+            </command>
+            <command type="PLACE_COMMAND">
+               <text><![CDATA[M9]]></text>
+            </command>
+            <command type="PUMP_ON_COMMAND">
+               <text><![CDATA[M4]]></text>
+            </command>
+            <command type="PUMP_OFF_COMMAND">
+               <text><![CDATA[M5]]></text>
+            </command>
+            <command type="MOVE_TO_COMMAND">
+               <text><![CDATA[G0 {X:X%.4f} {Y:Y%.4f} {Z:Z%.4f} {Rotation:A%.4f} F{FeedRate:%.0f}]]></text>
+            </command>
+            <command head-mountable-id="ACT1582497401237" type="ACTUATE_BOOLEAN_COMMAND">
+               <text><![CDATA[{True:M4}{False:M5}]]></text>
+            </command>
+            <command head-mountable-id="ACT1582497414326" type="ACTUATE_BOOLEAN_COMMAND">
+               <text><![CDATA[{True:M8}{False:M9}]]></text>
+            </command>
+            <command type="GET_POSITION_COMMAND">
+               <text><![CDATA[M114]]></text>
+            </command>
+            <command type="MOVE_TO_COMPLETE_COMMAND">
+               <text><![CDATA[M400]]></text>
+            </command>
+            <command type="SET_GLOBAL_OFFSETS_COMMAND">
+               <text><![CDATA[G28.3 {X:X%.4f} {Y:Y%.4f} {Z:Z%.4f} {A:A%.4f}]]></text>
+            </command>
+            <junction-deviation value="0.02" units="Millimeters"/>
+         </driver>

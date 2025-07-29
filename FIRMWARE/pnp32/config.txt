@@ -1,0 +1,23 @@
+
+//Machine parameters
+X_SoftLimitLow     0.000 mm
+X_SoftLimitHigh    0.000 mm
+X_microsteps = 
+X_steps_per_mm = 80.0;
+X_feed_rate = 10000.0;       // mm/min
+X_acceleration = 2000.0;     // mm/s^2
+X_deceleration = 1000.0;     // mm/s^2
+X_jerk = 10.0;               // mm/s
+
+
+
+Connect command
+M701 X80.0 Y80.0 Z400.0
+M702 X10000 Y10000 Z10000
+M703 X2000 Y2000 Z2000
+M704 X1000 Y1000 Z1000
+M705 X10 Y10 Z10
+M706 X16 Y16 Z16
+M707 X0 Y0 Z0
+M708 X250 Y250 Z250
+
