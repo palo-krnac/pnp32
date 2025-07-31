@@ -1,0 +1,3 @@
+2025-07-29 17:15:46,623 - panelizer_logger - INFO - Running Panelizer
+2025-07-29 17:15:46,623 - panelizer_logger - ERROR - Version check failed. "9.0.3" not supported
+2025-07-29 17:15:46,634 - panelizer_logger - INFO - Panelizer complete

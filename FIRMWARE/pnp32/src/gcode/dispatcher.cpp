@@ -10,8 +10,8 @@
 
 void dispatchGCode(int code, float x, float y, float z, float a, float b, float c)
 {
-  Serial.print("Spracovanie G");
-  Serial.println(code);
+  // Serial.print("Handling M"");
+  // Serial.println(code);
   switch (code)
   {
     case 0: handleG0(x, y, z, a, b, c); break;

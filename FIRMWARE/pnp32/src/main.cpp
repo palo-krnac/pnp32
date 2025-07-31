@@ -30,9 +30,9 @@ void setup()
      #elif defined(pnp32_MCH)
      Serial.println("Bežíme na MCH");
      #elif defined(PnP_Controller)
-     Serial.println("Bežíme na Teensy 4.0");
+     Serial.println("Test Teensy 4.1 board");
      #else
-     #error "Nezvolená podpora dosky!"
+     #error "Unselected board support!"
   #endif
 }
 
@@ -46,7 +46,7 @@ void loop()
       GCode.ParseLine();
       GCode.RemoveCommentSeparators();
 
-      Serial.print("\nPrijatý riadok: ");
+      Serial.print("\nLine received: ");
       Serial.println(GCode.line);
 
       xPos = yPos = zPos = aPos = bPos = cPos = NAN;
@@ -73,7 +73,7 @@ void loop()
       }
 
       if (!hasG && !hasM) {
-        Serial.println(" → Žiadny G ani M kód.");
+        Serial.println(" → No G or M code.");
       }
     }
   }

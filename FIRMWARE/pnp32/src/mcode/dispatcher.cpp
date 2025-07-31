@@ -16,8 +16,8 @@
 
 void dispatchMCode(int code, GCodeParser& GCode)
 {
-  Serial.print("Handling M");
-  Serial.println(code);
+  // Serial.print("Handling M");
+  // Serial.println(code);
 
   switch (code)
   {

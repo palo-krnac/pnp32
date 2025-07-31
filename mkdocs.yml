@@ -123,6 +123,16 @@ markdown_extensions:
   - pymdownx.highlight
 
 
+# Customisation
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/RetroPie
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/retropieproject
+
+extra_css:
+  - 'stylesheets/extra.css'
 
 
 nav:
