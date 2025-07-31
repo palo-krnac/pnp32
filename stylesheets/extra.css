@@ -1,0 +1,61 @@
+:root > * {
+    /* Primary color shades */
+    --md-primary-fg-color: #222;
+    --md-primary-fg-color--dark: #222;
+
+    /* Accent color shades for links */
+    --md-accent-fg-color: #FF0000;
+    --md-primary-fg-color: #FF0000;
+
+    /* Make headings bold(er) */
+    .md-typeset { h1, h2, h3 { font-weight: 700; } }
+}
+
+/* Fonts: use a 'system' font stack, without loading an external font */
+/* See https://squidfunk.github.io/mkdocs-material/setup/changing-the-fonts/?h=fonts#changing-the-fonts */
+:root {
+    /* Fonts: use a 'system' font stack, without loading an external font */
+    --md-text-font: system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    --md-code-font: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+}
+
+.md-typeset table:not([class]) th:not([align]){text-align:left}.md-typeset table:not([class]) th{
+  min-width:10rem;
+  padding:1.2rem 1.6rem;
+  background-color:rgba(0, 0, 0, 1);
+  color:#fff;
+  vertical-align:top
+}
+
+.md-typeset a {
+  color: var(--md-accent-fg-color);
+}
+
+article a:hover {
+  text-decoration: underline;
+}
+
+/* Force header height and color */
+.md-header {
+  height: 50px;
+  background-color: #222;
+}
+
+.md-header-nav__button.md-logo {
+  margin: 0;
+  padding: 0;
+}
+
+.md-header-nav__button.md-logo img, .md-nav__button img {
+  height: 50px;
+  width: 50px;
+}
+
+.md-typeset figcaption {
+  margin-top: -0.7em;
+}
+
+/* Increase the font size in admonition blocks */
+.md-typeset .admonition,.md-typeset details {
+    font-size: .75rem;
+}
