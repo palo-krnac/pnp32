@@ -4,6 +4,12 @@
 	(generator_version "9.0")
 	(uuid "a02e5dd1-80da-4253-b87a-c8707aa3e0b0")
 	(paper "A4")
+	(title_block
+		(title "pnp32 Motion Controller")
+		(date "2025-08-01")
+		(rev "V0.1")
+		(company "telelmetry.digital s.r.o.")
+	)
 	(lib_symbols)
 	(junction
 		(at 236.22 101.6)
@@ -857,88 +863,6 @@
 			(project "pnp32_mainboard"
 				(path "/a02e5dd1-80da-4253-b87a-c8707aa3e0b0"
 					(page "9")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 245.11 20.32)
-		(size 33.02 12.7)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "9eb8d42e-6154-4c2e-a139-649ab80f1930")
-		(property "Sheetname" "X-driver"
-			(at 245.11 19.6084 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "driver_TMC5130.kicad_sch"
-			(at 245.11 33.6046 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(pin "SPI_CLK" input
-			(at 245.11 27.94 180)
-			(uuid "2c3e1eef-ddb4-4eb2-87a6-2485cdd5b53a")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "SPI_CS" input
-			(at 245.11 30.48 180)
-			(uuid "ccb3482b-84c7-4e8e-af49-1db7c709d3a4")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "SPI_MISO" input
-			(at 245.11 22.86 180)
-			(uuid "68f247df-c014-479d-a53b-bc9c28e22462")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "SPI_MOSI" input
-			(at 245.11 25.4 180)
-			(uuid "3f19456a-da47-475b-8094-63ca3c25c4fe")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(instances
-			(project "pnp32_mainboard"
-				(path "/a02e5dd1-80da-4253-b87a-c8707aa3e0b0"
-					(page "4")
 				)
 			)
 		)

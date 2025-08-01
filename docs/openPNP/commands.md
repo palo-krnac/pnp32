@@ -53,11 +53,13 @@
 
     ^ok.*
 
+## COMMAND_ERROR_REGEX
+
+    ^error.*
+
 ## POSITION_REPORT_REGEX
 
     ^.*X:(?<X>-?\d+\.\d+) Y:(?<Y>-?\d+\.\d+) Z:(?<Z>-?\d+\.\d+) A:(?<A>-?\d+\.\d+) B:(?<B>-?\d+\.\d+).*
 
-## COMMAND_ERROR_REGEX
 
-    ^ok.*
 

@@ -4,6 +4,12 @@
 	(generator_version "9.0")
 	(uuid "b07a0c36-5a75-4bcb-95ab-30ad29518448")
 	(paper "A4")
+	(title_block
+		(title "pnp32 Motion Controller")
+		(date "2025-08-01")
+		(rev "V0.1")
+		(company "telelmetry.digital s.r.o.")
+	)
 	(lib_symbols
 		(symbol "fab_ESP:ESP32-PICO-V3"
 			(pin_names
