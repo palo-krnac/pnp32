@@ -3,7 +3,11 @@
 High-performance, fully modular motion controller for advanced Pick & Place machines. Designed to seamlessly integrate with OpenPnP and support direct SPI-controlled stepper drivers for ultra-smooth and precise motion.
 
 
-!!! danger "Dôležité upozornenie"
+!!! danger "Work in Progress"
+    This project is currently under active development.  
+    Features and documentation may change frequently.  
+    Use at your own discretion.
+
 ---
 
 ## 🚀 **Key Features**
