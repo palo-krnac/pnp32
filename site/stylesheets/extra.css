@@ -1,7 +1,7 @@
 :root > * {
     /* Primary color shades */
-    --md-primary-fg-color: #222;
-    --md-primary-fg-color--dark: #222;
+    --md-primary-fg-color: #4c4c4c;
+    --md-primary-fg-color--dark: #4c4c4c;
 
     /* Accent color shades for links */
     --md-accent-fg-color: #FF0000;
@@ -27,6 +27,8 @@
   vertical-align:top
 }
 
+
+
 .md-typeset a {
   color: var(--md-accent-fg-color);
 }
@@ -38,7 +40,7 @@ article a:hover {
 /* Force header height and color */
 .md-header {
   height: 50px;
-  background-color: #222;
+  background-color: #4c4c4c;
 }
 
 .md-header-nav__button.md-logo {
