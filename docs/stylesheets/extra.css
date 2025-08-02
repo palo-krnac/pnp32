@@ -26,13 +26,8 @@
   color:#fff;
   vertical-align:top
 }
-.md-typeset table thead tr {
-  background-color: #ff0000 !important;
-}
 
-.md-typeset table thead th {
-  color: #ffffff !important;
-}
+
 
 .md-typeset a {
   color: var(--md-accent-fg-color);
