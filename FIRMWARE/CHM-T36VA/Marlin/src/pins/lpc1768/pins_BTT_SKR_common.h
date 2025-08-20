@@ -103,7 +103,7 @@
   #endif
 #endif
 #ifndef FAN_PIN
-  #define FAN_PIN                          P1_19  //P2_03 - tieto som menil ja koli PWM na vystupoch ohrevu nahradené s EXP1
+  #define FAN_PIN                          P2_03 //P1_19 - tieto som menil ja koli PWM na vystupoch ohrevu nahradené s EXP1 !!!! test
 #endif
 #ifndef HEATER_BED_PIN
   #define HEATER_BED_PIN                   P1_20  //P2_05 - tieto som menil ja koli PWM na vystupoch ohrevu nahradené s EXP1
