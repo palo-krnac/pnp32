@@ -454,6 +454,7 @@
       "single_global_label": "ignore",
       "unannotated": "error",
       "unconnected_wire_endpoint": "warning",
+      "undefined_netclass": "error",
       "unit_value_mismatch": "error",
       "unresolved_variable": "error",
       "wire_dangling": "error"
@@ -646,16 +647,20 @@
       "CPU"
     ],
     [
+      "821b2e97-406d-4e86-b34c-70394fee7de3",
+      "X-driver"
+    ],
+    [
       "a54d937e-12a5-4dff-8c5d-763d1b46ce81",
       "Y-driver"
     ],
     [
-      "bc306ebc-9231-4e41-974d-f78f75c244a9",
-      "A-driver"
-    ],
-    [
       "4927e2a7-a4c2-4e52-af67-49600773c73d",
       "Z-driver"
+    ],
+    [
+      "bc306ebc-9231-4e41-974d-f78f75c244a9",
+      "A-driver"
     ],
     [
       "36c8ee69-d46e-4392-9648-7ffe454aa773",

@@ -780,7 +780,89 @@
 		(instances
 			(project "pnp32_mainboard"
 				(path "/a02e5dd1-80da-4253-b87a-c8707aa3e0b0"
-					(page "8")
+					(page "6")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 245.11 20.32)
+		(size 33.02 12.7)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "821b2e97-406d-4e86-b34c-70394fee7de3")
+		(property "Sheetname" "X-driver"
+			(at 245.11 19.6084 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "driver_TMC5130.kicad_sch"
+			(at 245.11 33.6046 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "SPI_CLK" input
+			(at 245.11 27.94 180)
+			(uuid "2b69b60d-8525-4efa-8494-0d8151f4fe28")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "SPI_CS" input
+			(at 245.11 30.48 180)
+			(uuid "ebdcf7b4-3066-4238-9361-71348fedf9a8")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "SPI_MISO" input
+			(at 245.11 22.86 180)
+			(uuid "e71e9b94-e6da-480c-a530-9a129860b163")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "SPI_MOSI" input
+			(at 245.11 25.4 180)
+			(uuid "c057d9b5-80f3-4cf1-ab53-4c144887cc79")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "pnp32_mainboard"
+				(path "/a02e5dd1-80da-4253-b87a-c8707aa3e0b0"
+					(page "4")
 				)
 			)
 		)
@@ -944,7 +1026,7 @@
 		(instances
 			(project "pnp32_mainboard"
 				(path "/a02e5dd1-80da-4253-b87a-c8707aa3e0b0"
-					(page "7")
+					(page "5")
 				)
 			)
 		)
