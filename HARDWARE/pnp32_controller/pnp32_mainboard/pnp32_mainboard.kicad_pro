@@ -669,6 +669,58 @@
     [
       "831bc4de-0744-4eeb-b882-33b45fc786ec",
       "C-driver"
+    ],
+    [
+      "f98088da-bfed-4aa9-90a6-3a21c11b25be",
+      "VAC1"
+    ],
+    [
+      "a0e21688-4b5f-473e-98e5-dfe9f596e6e9",
+      "VAC2"
+    ],
+    [
+      "6672152e-a778-4dd9-a7c8-b93bc5b9b59b",
+      "VAC_PUMP"
+    ],
+    [
+      "3c0580c5-cee6-4215-b3b8-807b199258e0",
+      "AIR1"
+    ],
+    [
+      "d947a5b7-de02-40db-a095-e530927f9fc8",
+      "AIR2"
+    ],
+    [
+      "969d0a00-21f8-4986-be2b-e319553dc2ab",
+      "AIR_PUMP"
+    ],
+    [
+      "d75b9ede-8115-4a1a-ba5c-5202cedca149",
+      "LIGHT_BOTTOM"
+    ],
+    [
+      "68017b66-d25d-4af8-bffb-a371ea1e6e65",
+      "LIGHT_TOP"
+    ],
+    [
+      "a1996ad9-4e24-4a2c-97f8-6ce9e546a576",
+      "X_STOP"
+    ],
+    [
+      "74eca374-0550-400f-b42a-a962adef3c65",
+      "Y_STOP"
+    ],
+    [
+      "ad9aea1c-161e-461e-85dc-43f2ef5b3f28",
+      "Z_STOP"
+    ],
+    [
+      "90dbf748-03b4-46b2-ab1d-08c7e5cc9fb9",
+      "E-STOP"
+    ],
+    [
+      "a5121a4a-6bf3-43d7-9b3d-66e6ca2c158b",
+      "ENABLE"
     ]
   ],
   "text_variables": {}
