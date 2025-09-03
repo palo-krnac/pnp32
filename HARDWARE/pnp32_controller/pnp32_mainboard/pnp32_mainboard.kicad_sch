@@ -311,7 +311,7 @@
 		)
 		(uuid "95039dcf-69ff-4814-ac74-a824c7421313")
 	)
-	(text "Pridať\n-USB Hub FE1.11s + CH340X - 2x usb vystup a treti na CH340\n- RS485 - odkreslit z displejov\n- vakuovy senzor najst s I2C SMD na podtlak vakuum a dobre bybolo aj na tlak \n- wled odkresliť z SKR + pridať ESD ochranu\n- digitalne tranzistorove vystupy mosfet zmeniť tranzistory na pumpach s vacsim vykonom\n- dorobit drivery  - schema tu --- https://www.mikroe.com/silent-step-click\n- nie sú dorobené vstupy koncakov \n\nESD ochrany na 3,3, 5, 12, 24 VDC velkosti 0402 a 0603 knižnice\n"
+	(text "Pridať\n-USB Hub FE1.11s + CH340X - 2x usb vystup a treti na CH340\n- RS485 - odkreslit z displejov\n- vakuovy senzor najst s I2C SMD na podtlak vakuum a dobre bybolo aj na tlak \n- wled odkresliť z SKR + pridať ESD ochranu\n- digitalne tranzistorove vystupy mosfet zmeniť tranzistory na pumpach s vacsim vykonom\n- dorobit drivery  - schema tu --- https://www.mikroe.com/silent-step-click\n- nie sú dorobené vstupy koncakov \n\nESD ochrany na 3,3, 5, 12, 24 VDC velkosti 0402 a 0603 knižnice\nTHT konektory\n"
 		(exclude_from_sim no)
 		(at 184.658 230.124 0)
 		(effects
