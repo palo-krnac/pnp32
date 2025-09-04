@@ -1554,7 +1554,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9ca8eaa0-46be-4f85-8b5b-586f6a8c0ddd")
-		(property "Reference" "#PWR0164"
+		(property "Reference" "#PWR01"
 			(at 154.94 195.58 0)
 			(effects
 				(font
@@ -1606,7 +1606,7 @@
 		(instances
 			(project "pnp32_mainboard"
 				(path "/a02e5dd1-80da-4253-b87a-c8707aa3e0b0"
-					(reference "#PWR0164")
+					(reference "#PWR01")
 					(unit 1)
 				)
 			)
@@ -2088,7 +2088,7 @@
 		(instances
 			(project "pnp32_mainboard"
 				(path "/a02e5dd1-80da-4253-b87a-c8707aa3e0b0"
-					(page "8")
+					(page "9")
 				)
 			)
 		)
@@ -2140,7 +2140,7 @@
 		(instances
 			(project "pnp32_mainboard"
 				(path "/a02e5dd1-80da-4253-b87a-c8707aa3e0b0"
-					(page "13")
+					(page "14")
 				)
 			)
 		)
@@ -2222,7 +2222,7 @@
 		(instances
 			(project "pnp32_mainboard"
 				(path "/a02e5dd1-80da-4253-b87a-c8707aa3e0b0"
-					(page "6")
+					(page "7")
 				)
 			)
 		)
@@ -2274,7 +2274,7 @@
 		(instances
 			(project "pnp32_mainboard"
 				(path "/a02e5dd1-80da-4253-b87a-c8707aa3e0b0"
-					(page "12")
+					(page "13")
 				)
 			)
 		)
@@ -2326,7 +2326,7 @@
 		(instances
 			(project "pnp32_mainboard"
 				(path "/a02e5dd1-80da-4253-b87a-c8707aa3e0b0"
-					(page "17")
+					(page "18")
 				)
 			)
 		)
@@ -2378,7 +2378,49 @@
 		(instances
 			(project "pnp32_mainboard"
 				(path "/a02e5dd1-80da-4253-b87a-c8707aa3e0b0"
-					(page "19")
+					(page "20")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 156.21 124.46)
+		(size 36.83 12.7)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "7d8bbaa7-c57f-4482-a5dd-84100c2ba381")
+		(property "Sheetname" "COM"
+			(at 156.21 123.7484 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "com.kicad_sch"
+			(at 156.21 137.7446 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "pnp32_mainboard"
+				(path "/a02e5dd1-80da-4253-b87a-c8707aa3e0b0"
+					(page "3")
 				)
 			)
 		)
@@ -2460,7 +2502,7 @@
 		(instances
 			(project "pnp32_mainboard"
 				(path "/a02e5dd1-80da-4253-b87a-c8707aa3e0b0"
-					(page "4")
+					(page "5")
 				)
 			)
 		)
@@ -2542,7 +2584,7 @@
 		(instances
 			(project "pnp32_mainboard"
 				(path "/a02e5dd1-80da-4253-b87a-c8707aa3e0b0"
-					(page "9")
+					(page "10")
 				)
 			)
 		)
@@ -2594,7 +2636,7 @@
 		(instances
 			(project "pnp32_mainboard"
 				(path "/a02e5dd1-80da-4253-b87a-c8707aa3e0b0"
-					(page "21")
+					(page "22")
 				)
 			)
 		)
@@ -2646,7 +2688,7 @@
 		(instances
 			(project "pnp32_mainboard"
 				(path "/a02e5dd1-80da-4253-b87a-c8707aa3e0b0"
-					(page "15")
+					(page "16")
 				)
 			)
 		)
@@ -2698,7 +2740,7 @@
 		(instances
 			(project "pnp32_mainboard"
 				(path "/a02e5dd1-80da-4253-b87a-c8707aa3e0b0"
-					(page "11")
+					(page "12")
 				)
 			)
 		)
@@ -2750,7 +2792,7 @@
 		(instances
 			(project "pnp32_mainboard"
 				(path "/a02e5dd1-80da-4253-b87a-c8707aa3e0b0"
-					(page "18")
+					(page "19")
 				)
 			)
 		)
@@ -2802,7 +2844,7 @@
 		(instances
 			(project "pnp32_mainboard"
 				(path "/a02e5dd1-80da-4253-b87a-c8707aa3e0b0"
-					(page "22")
+					(page "23")
 				)
 			)
 		)
@@ -2884,7 +2926,7 @@
 		(instances
 			(project "pnp32_mainboard"
 				(path "/a02e5dd1-80da-4253-b87a-c8707aa3e0b0"
-					(page "5")
+					(page "6")
 				)
 			)
 		)
@@ -2936,7 +2978,7 @@
 		(instances
 			(project "pnp32_mainboard"
 				(path "/a02e5dd1-80da-4253-b87a-c8707aa3e0b0"
-					(page "20")
+					(page "21")
 				)
 			)
 		)
@@ -3060,7 +3102,7 @@
 		(instances
 			(project "pnp32_mainboard"
 				(path "/a02e5dd1-80da-4253-b87a-c8707aa3e0b0"
-					(page "7")
+					(page "8")
 				)
 			)
 		)
@@ -3112,7 +3154,7 @@
 		(instances
 			(project "pnp32_mainboard"
 				(path "/a02e5dd1-80da-4253-b87a-c8707aa3e0b0"
-					(page "16")
+					(page "17")
 				)
 			)
 		)
@@ -3164,7 +3206,7 @@
 		(instances
 			(project "pnp32_mainboard"
 				(path "/a02e5dd1-80da-4253-b87a-c8707aa3e0b0"
-					(page "14")
+					(page "15")
 				)
 			)
 		)
@@ -3446,7 +3488,7 @@
 		(instances
 			(project "pnp32_mainboard"
 				(path "/a02e5dd1-80da-4253-b87a-c8707aa3e0b0"
-					(page "3")
+					(page "4")
 				)
 			)
 		)
@@ -3498,7 +3540,7 @@
 		(instances
 			(project "pnp32_mainboard"
 				(path "/a02e5dd1-80da-4253-b87a-c8707aa3e0b0"
-					(page "10")
+					(page "11")
 				)
 			)
 		)

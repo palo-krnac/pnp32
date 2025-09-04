@@ -12,7 +12,7 @@
 		(comment 1 "Author: Tadeáš VICIAN")
 	)
 	(lib_symbols
-		(symbol "Connector_Generic_MountingPin:Conn_01x03_MountingPin"
+		(symbol "fab_CON:WE_620303124022"
 			(pin_names
 				(offset 1.016)
 				(hide yes)
@@ -28,16 +28,15 @@
 					)
 				)
 			)
-			(property "Value" "Conn_01x03_MountingPin"
-				(at 1.27 -5.08 0)
+			(property "Value" "Conn_01x03_Pin"
+				(at 0 -7.62 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left)
 				)
 			)
-			(property "Footprint" ""
+			(property "Footprint" "fab_CON:WE_620303124022"
 				(at 0 0 0)
 				(effects
 					(font
@@ -46,7 +45,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "~"
+			(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8589834857439666176"
 				(at 0 0 0)
 				(effects
 					(font
@@ -55,7 +54,43 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Generic connectable mounting pin connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(property "Description" "-25℃~+85℃ 1 12mm 1x4P 250V 2A 2mm 3 3P 6.2mm 7.5mm Auxiliary Solder Pin Beige Brass LCP PH Surface Mount,Vertical SMD,P=2mm Wire To Board Connector ROHS"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "LCSC" "C3029432"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "WE" "620303124022"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer" "XUNPU"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Type" "WAFER-PH2.0-3PLB"
 				(at 0 0 0)
 				(effects
 					(font
@@ -73,7 +108,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "Connector*:*_1x??-1MP*"
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -82,43 +117,44 @@
 					(hide yes)
 				)
 			)
-			(symbol "Conn_01x03_MountingPin_1_1"
+			(symbol "WE_620303124022_1_1"
 				(rectangle
-					(start -1.27 3.81)
-					(end 1.27 -3.81)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(rectangle
-					(start -1.27 2.667)
+					(start 0.8636 2.667)
 					(end 0 2.413)
 					(stroke
 						(width 0.1524)
 						(type default)
 					)
 					(fill
-						(type none)
+						(type outline)
 					)
 				)
 				(rectangle
-					(start -1.27 0.127)
+					(start 0.8636 0.127)
 					(end 0 -0.127)
 					(stroke
 						(width 0.1524)
 						(type default)
 					)
 					(fill
-						(type none)
+						(type outline)
 					)
 				)
 				(rectangle
-					(start -1.27 -2.413)
+					(start 0.8636 -2.413)
 					(end 0 -2.667)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 2.54) (xy 0.8636 2.54)
+					)
 					(stroke
 						(width 0.1524)
 						(type default)
@@ -129,7 +165,7 @@
 				)
 				(polyline
 					(pts
-						(xy -1.016 -4.572) (xy 1.016 -4.572)
+						(xy 1.27 0) (xy 0.8636 0)
 					)
 					(stroke
 						(width 0.1524)
@@ -139,16 +175,20 @@
 						(type none)
 					)
 				)
-				(text "Mounting"
-					(at 0 -4.191 0)
-					(effects
-						(font
-							(size 0.381 0.381)
-						)
+				(polyline
+					(pts
+						(xy 1.27 -2.54) (xy 0.8636 -2.54)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
 					)
 				)
 				(pin passive line
-					(at -5.08 2.54 0)
+					(at 5.08 2.54 180)
 					(length 3.81)
 					(name "Pin_1"
 						(effects
@@ -166,7 +206,7 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 0 0)
+					(at 5.08 0 180)
 					(length 3.81)
 					(name "Pin_2"
 						(effects
@@ -184,7 +224,7 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 -2.54 0)
+					(at 5.08 -2.54 180)
 					(length 3.81)
 					(name "Pin_3"
 						(effects
@@ -194,24 +234,6 @@
 						)
 					)
 					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -7.62 90)
-					(length 3.048)
-					(name "MountPin"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "MP"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1244,16 +1266,6 @@
 	)
 	(wire
 		(pts
-			(xy 135.89 86.36) (xy 135.89 91.44)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ae10d7bd-3812-4c00-afe6-2a11c5d8a86d")
-	)
-	(wire
-		(pts
 			(xy 114.3 78.74) (xy 130.81 78.74)
 		)
 		(stroke
@@ -1293,7 +1305,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "35237214-c497-4565-aad4-c6776fd9ad61")
-		(property "Reference" "#PWR0184"
+		(property "Reference" "#PWR0166"
 			(at 114.3 97.79 0)
 			(effects
 				(font
@@ -1345,206 +1357,15 @@
 		(instances
 			(project "pnp32_mainboard"
 				(path "/a02e5dd1-80da-4253-b87a-c8707aa3e0b0/74eca374-0550-400f-b42a-a962adef3c65"
-					(reference "#PWR0185")
+					(reference "#PWR0170")
 					(unit 1)
 				)
 				(path "/a02e5dd1-80da-4253-b87a-c8707aa3e0b0/90dbf748-03b4-46b2-ab1d-08c7e5cc9fb9"
-					(reference "#PWR0187")
-					(unit 1)
-				)
-				(path "/a02e5dd1-80da-4253-b87a-c8707aa3e0b0/a1996ad9-4e24-4a2c-97f8-6ce9e546a576"
-					(reference "#PWR0184")
-					(unit 1)
-				)
-				(path "/a02e5dd1-80da-4253-b87a-c8707aa3e0b0/a5121a4a-6bf3-43d7-9b3d-66e6ca2c158b"
-					(reference "#PWR0188")
-					(unit 1)
-				)
-				(path "/a02e5dd1-80da-4253-b87a-c8707aa3e0b0/ad9aea1c-161e-461e-85dc-43f2ef5b3f28"
-					(reference "#PWR0186")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector_Generic_MountingPin:Conn_01x03_MountingPin")
-		(at 135.89 78.74 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "3d64002f-2659-4512-97e1-90cf92f10768")
-		(property "Reference" "J17"
-			(at 135.89 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "TOP_LIGHT"
-			(at 135.89 72.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Connector_JST:JST_PH_B3B-PH-SM4-TB_1x03-1MP_P2.00mm_Vertical"
-			(at 135.89 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 135.89 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 135.89 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "JLCPCB" "C146054"
-			(at 135.89 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C2829151"
-			(at 135.89 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "3"
-			(uuid "fdf75c88-625f-41d4-a3a1-69958ec5f312")
-		)
-		(pin "MP"
-			(uuid "a2500e87-3850-450a-9a44-ff32f1db6f08")
-		)
-		(pin "1"
-			(uuid "c1fcb592-1d19-4141-a5c8-6bad041eeeb6")
-		)
-		(pin "2"
-			(uuid "2419c04b-7a9c-4f70-863a-9095ce5369c7")
-		)
-		(instances
-			(project "pnp32_mainboard"
-				(path "/a02e5dd1-80da-4253-b87a-c8707aa3e0b0/74eca374-0550-400f-b42a-a962adef3c65"
-					(reference "J18")
-					(unit 1)
-				)
-				(path "/a02e5dd1-80da-4253-b87a-c8707aa3e0b0/90dbf748-03b4-46b2-ab1d-08c7e5cc9fb9"
-					(reference "J20")
-					(unit 1)
-				)
-				(path "/a02e5dd1-80da-4253-b87a-c8707aa3e0b0/a1996ad9-4e24-4a2c-97f8-6ce9e546a576"
-					(reference "J17")
-					(unit 1)
-				)
-				(path "/a02e5dd1-80da-4253-b87a-c8707aa3e0b0/a5121a4a-6bf3-43d7-9b3d-66e6ca2c158b"
-					(reference "J21")
-					(unit 1)
-				)
-				(path "/a02e5dd1-80da-4253-b87a-c8707aa3e0b0/ad9aea1c-161e-461e-85dc-43f2ef5b3f28"
-					(reference "J19")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 135.89 91.44 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "49bd8007-83f0-4fc8-939e-48d9794d3420")
-		(property "Reference" "#PWR0176"
-			(at 135.89 97.79 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 135.89 95.25 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 135.89 91.44 0)
-			(effects
-				(font
-					(size 1 1)
-					(color 223 129 255 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 135.89 91.44 0)
-			(effects
-				(font
-					(size 1 1)
-					(color 223 129 255 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 135.89 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "956d42ee-df03-4da4-b8f0-7c428cf9dba7")
-		)
-		(instances
-			(project "pnp32_mainboard"
-				(path "/a02e5dd1-80da-4253-b87a-c8707aa3e0b0/74eca374-0550-400f-b42a-a962adef3c65"
 					(reference "#PWR0178")
 					(unit 1)
 				)
-				(path "/a02e5dd1-80da-4253-b87a-c8707aa3e0b0/90dbf748-03b4-46b2-ab1d-08c7e5cc9fb9"
-					(reference "#PWR0180")
-					(unit 1)
-				)
 				(path "/a02e5dd1-80da-4253-b87a-c8707aa3e0b0/a1996ad9-4e24-4a2c-97f8-6ce9e546a576"
-					(reference "#PWR0176")
+					(reference "#PWR0166")
 					(unit 1)
 				)
 				(path "/a02e5dd1-80da-4253-b87a-c8707aa3e0b0/a5121a4a-6bf3-43d7-9b3d-66e6ca2c158b"
@@ -1552,7 +1373,7 @@
 					(unit 1)
 				)
 				(path "/a02e5dd1-80da-4253-b87a-c8707aa3e0b0/ad9aea1c-161e-461e-85dc-43f2ef5b3f28"
-					(reference "#PWR0179")
+					(reference "#PWR0174")
 					(unit 1)
 				)
 			)
@@ -1692,11 +1513,11 @@
 		(instances
 			(project ""
 				(path "/a02e5dd1-80da-4253-b87a-c8707aa3e0b0/74eca374-0550-400f-b42a-a962adef3c65"
-					(reference "R46")
+					(reference "R47")
 					(unit 1)
 				)
 				(path "/a02e5dd1-80da-4253-b87a-c8707aa3e0b0/90dbf748-03b4-46b2-ab1d-08c7e5cc9fb9"
-					(reference "R48")
+					(reference "R51")
 					(unit 1)
 				)
 				(path "/a02e5dd1-80da-4253-b87a-c8707aa3e0b0/a1996ad9-4e24-4a2c-97f8-6ce9e546a576"
@@ -1704,11 +1525,11 @@
 					(unit 1)
 				)
 				(path "/a02e5dd1-80da-4253-b87a-c8707aa3e0b0/a5121a4a-6bf3-43d7-9b3d-66e6ca2c158b"
-					(reference "R49")
+					(reference "R53")
 					(unit 1)
 				)
 				(path "/a02e5dd1-80da-4253-b87a-c8707aa3e0b0/ad9aea1c-161e-461e-85dc-43f2ef5b3f28"
-					(reference "R47")
+					(reference "R49")
 					(unit 1)
 				)
 			)
@@ -1724,7 +1545,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "657f8e37-4779-4b71-9197-83096ac6351d")
-		(property "Reference" "R40"
+		(property "Reference" "R44"
 			(at 116.84 71.1199 0)
 			(effects
 				(font
@@ -1850,23 +1671,23 @@
 		(instances
 			(project ""
 				(path "/a02e5dd1-80da-4253-b87a-c8707aa3e0b0/74eca374-0550-400f-b42a-a962adef3c65"
-					(reference "R41")
+					(reference "R46")
 					(unit 1)
 				)
 				(path "/a02e5dd1-80da-4253-b87a-c8707aa3e0b0/90dbf748-03b4-46b2-ab1d-08c7e5cc9fb9"
-					(reference "R43")
+					(reference "R50")
 					(unit 1)
 				)
 				(path "/a02e5dd1-80da-4253-b87a-c8707aa3e0b0/a1996ad9-4e24-4a2c-97f8-6ce9e546a576"
-					(reference "R40")
-					(unit 1)
-				)
-				(path "/a02e5dd1-80da-4253-b87a-c8707aa3e0b0/a5121a4a-6bf3-43d7-9b3d-66e6ca2c158b"
 					(reference "R44")
 					(unit 1)
 				)
+				(path "/a02e5dd1-80da-4253-b87a-c8707aa3e0b0/a5121a4a-6bf3-43d7-9b3d-66e6ca2c158b"
+					(reference "R52")
+					(unit 1)
+				)
 				(path "/a02e5dd1-80da-4253-b87a-c8707aa3e0b0/ad9aea1c-161e-461e-85dc-43f2ef5b3f28"
-					(reference "R42")
+					(reference "R48")
 					(unit 1)
 				)
 			)
@@ -1882,7 +1703,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "a04be45e-f5f1-4b7f-b032-bafa84782a54")
-		(property "Reference" "#PWR0171"
+		(property "Reference" "#PWR0167"
 			(at 128.27 97.79 0)
 			(effects
 				(font
@@ -1934,23 +1755,23 @@
 		(instances
 			(project "pnp32_mainboard"
 				(path "/a02e5dd1-80da-4253-b87a-c8707aa3e0b0/74eca374-0550-400f-b42a-a962adef3c65"
-					(reference "#PWR0172")
-					(unit 1)
-				)
-				(path "/a02e5dd1-80da-4253-b87a-c8707aa3e0b0/90dbf748-03b4-46b2-ab1d-08c7e5cc9fb9"
-					(reference "#PWR0174")
-					(unit 1)
-				)
-				(path "/a02e5dd1-80da-4253-b87a-c8707aa3e0b0/a1996ad9-4e24-4a2c-97f8-6ce9e546a576"
 					(reference "#PWR0171")
 					(unit 1)
 				)
+				(path "/a02e5dd1-80da-4253-b87a-c8707aa3e0b0/90dbf748-03b4-46b2-ab1d-08c7e5cc9fb9"
+					(reference "#PWR0179")
+					(unit 1)
+				)
+				(path "/a02e5dd1-80da-4253-b87a-c8707aa3e0b0/a1996ad9-4e24-4a2c-97f8-6ce9e546a576"
+					(reference "#PWR0167")
+					(unit 1)
+				)
 				(path "/a02e5dd1-80da-4253-b87a-c8707aa3e0b0/a5121a4a-6bf3-43d7-9b3d-66e6ca2c158b"
-					(reference "#PWR0175")
+					(reference "#PWR0183")
 					(unit 1)
 				)
 				(path "/a02e5dd1-80da-4253-b87a-c8707aa3e0b0/ad9aea1c-161e-461e-85dc-43f2ef5b3f28"
-					(reference "#PWR0173")
+					(reference "#PWR0175")
 					(unit 1)
 				)
 			)
@@ -1965,7 +1786,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "a82243a8-c039-4a0d-a8a1-9fa84dbf055a")
-		(property "Reference" "D17"
+		(property "Reference" "D19"
 			(at 116.84 83.8199 90)
 			(effects
 				(font
@@ -2055,23 +1876,23 @@
 		(instances
 			(project ""
 				(path "/a02e5dd1-80da-4253-b87a-c8707aa3e0b0/74eca374-0550-400f-b42a-a962adef3c65"
-					(reference "D18")
-					(unit 1)
-				)
-				(path "/a02e5dd1-80da-4253-b87a-c8707aa3e0b0/90dbf748-03b4-46b2-ab1d-08c7e5cc9fb9"
 					(reference "D20")
 					(unit 1)
 				)
+				(path "/a02e5dd1-80da-4253-b87a-c8707aa3e0b0/90dbf748-03b4-46b2-ab1d-08c7e5cc9fb9"
+					(reference "D22")
+					(unit 1)
+				)
 				(path "/a02e5dd1-80da-4253-b87a-c8707aa3e0b0/a1996ad9-4e24-4a2c-97f8-6ce9e546a576"
-					(reference "D17")
+					(reference "D19")
 					(unit 1)
 				)
 				(path "/a02e5dd1-80da-4253-b87a-c8707aa3e0b0/a5121a4a-6bf3-43d7-9b3d-66e6ca2c158b"
-					(reference "D21")
+					(reference "D23")
 					(unit 1)
 				)
 				(path "/a02e5dd1-80da-4253-b87a-c8707aa3e0b0/ad9aea1c-161e-461e-85dc-43f2ef5b3f28"
-					(reference "D19")
+					(reference "D21")
 					(unit 1)
 				)
 			)
@@ -2086,7 +1907,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "cb1e11c2-52f0-4659-b168-b62309772307")
-		(property "Reference" "#PWR0144"
+		(property "Reference" "#PWR0164"
 			(at 128.27 67.31 0)
 			(effects
 				(font
@@ -2138,23 +1959,23 @@
 		(instances
 			(project "pnp32_mainboard"
 				(path "/a02e5dd1-80da-4253-b87a-c8707aa3e0b0/74eca374-0550-400f-b42a-a962adef3c65"
-					(reference "#PWR0150")
+					(reference "#PWR0168")
 					(unit 1)
 				)
 				(path "/a02e5dd1-80da-4253-b87a-c8707aa3e0b0/90dbf748-03b4-46b2-ab1d-08c7e5cc9fb9"
-					(reference "#PWR0190")
+					(reference "#PWR0176")
 					(unit 1)
 				)
 				(path "/a02e5dd1-80da-4253-b87a-c8707aa3e0b0/a1996ad9-4e24-4a2c-97f8-6ce9e546a576"
-					(reference "#PWR0144")
+					(reference "#PWR0164")
 					(unit 1)
 				)
 				(path "/a02e5dd1-80da-4253-b87a-c8707aa3e0b0/a5121a4a-6bf3-43d7-9b3d-66e6ca2c158b"
-					(reference "#PWR0191")
+					(reference "#PWR0180")
 					(unit 1)
 				)
 				(path "/a02e5dd1-80da-4253-b87a-c8707aa3e0b0/ad9aea1c-161e-461e-85dc-43f2ef5b3f28"
-					(reference "#PWR0151")
+					(reference "#PWR0172")
 					(unit 1)
 				)
 			)
@@ -2170,7 +1991,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d60ba974-bb3a-4187-882b-37582c0bc888")
-		(property "Reference" "#PWR0159"
+		(property "Reference" "#PWR0165"
 			(at 114.3 68.58 0)
 			(effects
 				(font
@@ -2222,23 +2043,148 @@
 		(instances
 			(project "pnp32_mainboard"
 				(path "/a02e5dd1-80da-4253-b87a-c8707aa3e0b0/74eca374-0550-400f-b42a-a962adef3c65"
-					(reference "#PWR0160")
+					(reference "#PWR0169")
 					(unit 1)
 				)
 				(path "/a02e5dd1-80da-4253-b87a-c8707aa3e0b0/90dbf748-03b4-46b2-ab1d-08c7e5cc9fb9"
-					(reference "#PWR0162")
+					(reference "#PWR0177")
 					(unit 1)
 				)
 				(path "/a02e5dd1-80da-4253-b87a-c8707aa3e0b0/a1996ad9-4e24-4a2c-97f8-6ce9e546a576"
-					(reference "#PWR0159")
+					(reference "#PWR0165")
 					(unit 1)
 				)
 				(path "/a02e5dd1-80da-4253-b87a-c8707aa3e0b0/a5121a4a-6bf3-43d7-9b3d-66e6ca2c158b"
-					(reference "#PWR0163")
+					(reference "#PWR0181")
 					(unit 1)
 				)
 				(path "/a02e5dd1-80da-4253-b87a-c8707aa3e0b0/ad9aea1c-161e-461e-85dc-43f2ef5b3f28"
-					(reference "#PWR0161")
+					(reference "#PWR0173")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "fab_CON:WE_620303124022")
+		(at 135.89 78.74 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f8208ec4-a7bb-49ae-aa32-b4a62ed47345")
+		(property "Reference" "J17"
+			(at 137.16 80.0101 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Conn_01x03_Pin"
+			(at 137.16 77.4701 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "fab_CON:WE_620303124022"
+			(at 135.89 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8589834857439666176"
+			(at 135.89 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "-25℃~+85℃ 1 12mm 1x4P 250V 2A 2mm 3 3P 6.2mm 7.5mm Auxiliary Solder Pin Beige Brass LCP PH Surface Mount,Vertical SMD,P=2mm Wire To Board Connector ROHS"
+			(at 135.89 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C3029432"
+			(at 135.89 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "WE" "620303124022"
+			(at 135.89 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "XUNPU"
+			(at 135.89 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Type" "WAFER-PH2.0-3PLB"
+			(at 135.89 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "44ac9eb6-592f-40c3-91ef-4d2207e375e9")
+		)
+		(pin "2"
+			(uuid "5a6d4490-82f2-4c0d-8ec6-dc847ec573d3")
+		)
+		(pin "3"
+			(uuid "30201570-f367-4040-9f1f-fff68c7214eb")
+		)
+		(instances
+			(project ""
+				(path "/a02e5dd1-80da-4253-b87a-c8707aa3e0b0/74eca374-0550-400f-b42a-a962adef3c65"
+					(reference "J18")
+					(unit 1)
+				)
+				(path "/a02e5dd1-80da-4253-b87a-c8707aa3e0b0/90dbf748-03b4-46b2-ab1d-08c7e5cc9fb9"
+					(reference "J20")
+					(unit 1)
+				)
+				(path "/a02e5dd1-80da-4253-b87a-c8707aa3e0b0/a1996ad9-4e24-4a2c-97f8-6ce9e546a576"
+					(reference "J17")
+					(unit 1)
+				)
+				(path "/a02e5dd1-80da-4253-b87a-c8707aa3e0b0/a5121a4a-6bf3-43d7-9b3d-66e6ca2c158b"
+					(reference "J21")
+					(unit 1)
+				)
+				(path "/a02e5dd1-80da-4253-b87a-c8707aa3e0b0/ad9aea1c-161e-461e-85dc-43f2ef5b3f28"
+					(reference "J19")
 					(unit 1)
 				)
 			)

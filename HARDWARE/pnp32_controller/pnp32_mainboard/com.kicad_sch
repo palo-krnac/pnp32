@@ -1,0 +1,15 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "2f5c711e-20d7-4f45-9fd2-22b704022d48")
+	(paper "A4")
+	(title_block
+		(title "pnp32 Motion Controller")
+		(date "2025-08-01")
+		(rev "V0.1")
+		(company "telelmetry.digital s.r.o.")
+		(comment 1 "Author: Tadeáš VICIAN")
+	)
+	(lib_symbols)
+)
